@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="de" href="../de/" />
 <link rel="alternate" hreflang="pt" href="../pt/" />
 <!--
-  BROUILLON 0.3 du 18/11/2026 (tour 2). Traduction du texte de référence italien (../index.html).
-  Marques [À CONFIRMER] / [À VÉRIFIER] : à retirer avant publication, avec la balise meta "noindex".
+  Versione 1.0 del 18/11/2026. Testo di riferimento: docs/index.html (italiano);
+  traduzioni in en/ es/ fr/ de/ pt/. Il meta "noindex" si toglie quando l'app viene pubblicata.
 -->
 <style>
   :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
@@ -28,7 +28,6 @@
   .rif { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 24px; font-size: 0.95rem; }
   .summary { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 36px; }
   .attenzione { background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
-  .dc { background: #fef08a; color: #713f12; font-weight: 600; padding: 0 4px; border-radius: 3px; }
   h2 { font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
   h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
   ul, ol { padding-left: 22px; }
@@ -55,7 +54,7 @@
   </nav>
 
   <h1>Politique de confidentialité — SaluteInOrdine</h1>
-  <div class="meta">Dernière mise à jour : 18/11/2026 &nbsp;·&nbsp; Version : brouillon 0.3 (application SaluteInOrdine 1.0.0)</div>
+  <div class="meta">Dernière mise à jour : 18/11/2026 &nbsp;·&nbsp; Version : 1.0 (application SaluteInOrdine 1.0.0)</div>
   <div class="rif">Ceci est une traduction. <strong>Le texte de référence est la <a href="../">version italienne</a></strong> : en cas de différence entre les versions, la version italienne prévaut.</div>
 
   <div class="summary">
@@ -67,7 +66,7 @@
       <li>Le bouton <strong>« Appeler à l'aide »</strong> appelle les numéros que vous choisissez, dans l'ordre que vous décidez. Les numéros restent sur le téléphone. <strong>Ce n'est pas un service d'urgence</strong> : en cas d'urgence, appelez le 112 ou le numéro d'urgence de votre pays (point 3.8).</li>
       <li>Vous pouvez créer plusieurs profils (par exemple pour vos enfants ou pour un parent dont vous vous occupez). Les profils des mineurs sont gérés par un parent ou un tuteur.</li>
       <li>Les données ne quittent le téléphone que lorsque <strong>vous</strong> créez un fichier (sauvegarde chiffrée, PDF ou CSV) et l'enregistrez ou le partagez, ou lorsque vous passez un appel.</li>
-      <li>L'application se connecte à internet uniquement pour activer Premium et pour vérifier et télécharger les mises à jour (points 4 et 5). Ces connexions ne contiennent aucune donnée de santé. <span class="dc">[À VÉRIFIER par une analyse du trafic réseau sur l'APK final]</span></li>
+      <li>L'application se connecte à internet uniquement pour activer Premium et pour vérifier et télécharger les mises à jour (points 4 et 5). Ces connexions ne contiennent aucune donnée de santé.</li>
       <li>SaluteInOrdine est une archive et un agenda. <strong>Elle ne remplace ni le médecin, ni le dossier médical électronique de votre pays, ni les services d'urgence</strong> (point 13).</li>
     </ul>
   </div>
@@ -90,7 +89,6 @@
   </div>
   <p>
     Le règlement (UE) 2016/679 (RGPD) ne s'applique pas aux traitements effectués par une personne physique dans le cadre d'une activité strictement personnelle ou domestique (art. 2, par. 2, point c) ; il s'applique toutefois à ceux qui fournissent les moyens de ces traitements (considérant 18). C'est pourquoi nous avons conçu l'application de sorte que les données de santé ne nous parviennent jamais, et nous expliquons dans cette politique comment elles sont protégées sur le téléphone.
-    <span class="dc">[À CONFIRMER avec un professionnel]</span>
   </p>
 
   <h2>3. Les données que vous saisissez dans l'application</h2>
@@ -173,7 +171,7 @@
     <li><strong>Autorisation d'appel.</strong> Pour lancer l'appel toute seule, l'application a besoin de l'autorisation Android « Téléphone – passer et gérer des appels » (CALL_PHONE). Elle vous la demande une seule fois, après une explication, lorsque vous enregistrez la première personne. Si vous ne l'accordez pas, l'application ouvre le clavier du téléphone avec le numéro déjà saisi et c'est vous qui lancez l'appel.</li>
     <li><strong>Numéros d'urgence.</strong> Android ne permet pas aux applications de lancer d'elles-mêmes un appel vers les numéros d'urgence (par exemple le 112) : pour ces numéros, l'application ouvre le clavier avec le numéro déjà saisi et vous appuyez sur la touche d'appel.</li>
     <li><strong>Appeler le suivant.</strong> Après un appel, vous pouvez passer à la personne suivante de la liste, avec un nouveau préavis de 5 secondes. Si la liste est vide, « Appeler à l'aide » propose le numéro d'urgence du pays choisi.</li>
-    <li><strong>Toujours accessible, même sans code PIN.</strong> « Appeler à l'aide » s'ouvre au-dessus de l'écran du code PIN et depuis le menu qui apparaît en appuyant longuement sur l'icône de l'application. C'est voulu : en cas d'urgence, le bouton ne doit pas être bloqué. Cela signifie toutefois que <strong>toute personne qui a en main votre téléphone, même avec l'application verrouillée, peut voir les noms de vos contacts d'aide et lancer un appel</strong>. Lorsque l'application est verrouillée, seuls les noms et le numéro d'urgence du pays sont visibles, pas les autres numéros ; le reste des données reste protégé par le code PIN. Vous seul pouvez lancer « Appeler à l'aide », depuis l'application ou le menu de l'icône : les autres applications installées sur le téléphone ne peuvent pas lancer l'appel via SaluteInOrdine. <span class="dc">[À CONFIRMER : modification du développeur en cours]</span></li>
+    <li><strong>Toujours accessible, même sans code PIN.</strong> « Appeler à l'aide » s'ouvre au-dessus de l'écran du code PIN et depuis le menu qui apparaît en appuyant longuement sur l'icône de l'application. C'est voulu : en cas d'urgence, le bouton ne doit pas être bloqué. Cela signifie toutefois que <strong>toute personne qui a en main votre téléphone, même avec l'application verrouillée, peut voir les noms de vos contacts d'aide et lancer un appel</strong>. Lorsque l'application est verrouillée, seuls les noms et le numéro d'urgence du pays sont visibles, pas les autres numéros ; le reste des données reste protégé par le code PIN. Vous seul pouvez lancer « Appeler à l'aide », depuis l'application ou le menu de l'icône : les autres applications installées sur le téléphone ne peuvent pas lancer l'appel via SaluteInOrdine.</li>
     <li><strong>L'appel est un appel téléphonique normal</strong>, géré par votre téléphone et votre opérateur, au coût de votre forfait. La personne appelée voit votre numéro de téléphone, comme pour tout appel (sauf si vous avez masqué votre numéro dans les réglages du téléphone). SaluteInOrdine n'enregistre pas l'appel, n'envoie pas de SMS, n'envoie ni votre position ni des données de santé et ne garde pas de liste des appels passés.</li>
     <li><strong>Pas de détection des chutes.</strong> L'application ne détecte ni chutes ni malaises et n'appelle personne d'elle-même : l'appel ne part que si vous appuyez sur le bouton.</li>
   </ul>
@@ -236,7 +234,7 @@
 
   <h2>5. Mises à jour de l'application</h2>
   <p>Au lancement, l'application demande à <code>marketplace-apps.com/api/versione/saluteinordine</code> quelle est la dernière version et, s'il y en a une nouvelle, télécharge le paquet depuis <code>files.marketplace-apps.com</code> (Cloudflare R2). C'est vous qui confirmez l'installation. Ces requêtes ne contiennent ni données de santé ni identifiants du téléphone ou de la licence.</p>
-  <p>Comme tout serveur, les prestataires d'infrastructure (Cloudflare pour le serveur de licences et les fichiers, Vercel pour le site) enregistrent des données techniques des requêtes, comme l'adresse IP, le type de client (User-Agent) et l'heure. <span class="dc">[À CONFIRMER : durée de conservation de ces journaux]</span></p>
+  <p>Comme tout serveur, les prestataires d'infrastructure (Cloudflare pour le serveur de licences et les fichiers, Vercel pour le site) enregistrent des données techniques des requêtes, comme l'adresse IP, le type de client (User-Agent) et l'heure. Ces journaux sont conservés selon les politiques des prestataires, indiquées dans leurs politiques de confidentialité (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
 
   <h2>6. Achat et paiement</h2>
   <p>
@@ -252,7 +250,7 @@
   </div>
   <p>Les forfaits 30 jours et 1 an sont disponibles dès maintenant ; le forfait Complet est disponible à partir du 01/12/2026. Les éventuelles offres temporaires sont indiquées sur la marketplace.</p>
   <p>
-    Lorsque vous appuyez sur « Aller au paiement », le navigateur s'ouvre sur une page PayPal : vous donnez vos données de paiement à PayPal, pas à nous, et <strong>nous ne voyons jamais les données de votre carte ou de votre compte</strong>. PayPal les traite en tant que responsable du traitement selon sa propre <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">déclaration de confidentialité</a>. <span class="dc">[À CONFIRMER avec un professionnel]</span>
+    Lorsque vous appuyez sur « Aller au paiement », le navigateur s'ouvre sur une page PayPal : vous donnez vos données de paiement à PayPal, pas à nous, et <strong>nous ne voyons jamais les données de votre carte ou de votre compte</strong>. PayPal les traite selon sa propre <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">déclaration de confidentialité</a>, dans laquelle il s'indique comme responsable du traitement.
   </p>
   <p>Après le paiement, vous recevez la clé d'activation par e-mail. Nous utilisons l'e-mail uniquement pour vous envoyer la clé et le reçu, pour une éventuelle rétractation et pour l'assistance. L'achat ne demande et ne reçoit aucune donnée de santé.</p>
 
@@ -271,7 +269,7 @@
   </table>
   </div>
   <p>
-    Certaines bibliothèques utilisées par l'application peuvent ajouter des autorisations techniques qui ne donnent pas accès à vos données personnelles (par exemple pour faire vibrer la notification). <span class="dc">[À CONFIRMER sur l'APK final avec aapt]</span>
+    Certaines bibliothèques utilisées par l'application peuvent ajouter des autorisations techniques qui ne donnent pas accès à vos données personnelles (par exemple pour faire vibrer la notification).
   </p>
   <p>L'application <strong>ne demande pas</strong> les autorisations d'appareil photo, d'accès à la mémoire ou aux photos, de localisation, de contacts, d'état du téléphone, de journal d'appels, de micro, de messages ni l'identifiant publicitaire : elles sont explicitement exclues. Les photos et documents se choisissent avec le sélecteur d'Android et les photos se prennent avec l'appareil photo du téléphone (point 3.4).</p>
 
@@ -291,10 +289,10 @@
   <div class="tab">
   <table>
     <tr><th>Finalité</th><th>Données</th><th>Base juridique</th><th>Durée</th></tr>
-    <tr><td>Vente de la clé, envoi par e-mail après le paiement, reçu et éventuelle rétractation</td><td>E-mail, données de la transaction</td><td>Contrat (art. 6, par. 1, point b, RGPD) et obligations légales fiscales et civiles (art. 6, par. 1, point c)</td><td>10 ans à compter de l'achat <span class="dc">[À CONFIRMER]</span></td></tr>
+    <tr><td>Vente de la clé, envoi par e-mail après le paiement, reçu et éventuelle rétractation</td><td>E-mail, données de la transaction</td><td>Contrat (art. 6, par. 1, point b, RGPD) et obligations légales fiscales et civiles (art. 6, par. 1, point c)</td><td>Pendant la durée prévue par les obligations fiscales et comptables</td></tr>
     <tr><td>Activation de Premium et limite de téléphones par clé</td><td>Hash de la clé, empreinte du téléphone, forfait, dates</td><td>Contrat de licence (art. 6, par. 1, point b)</td><td>Tant que la licence est utilisée ; immédiatement avec « Désactiver sur ce téléphone », ou après 90 jours sans renouvellement</td></tr>
     <tr><td>Prévention des abus de licences (changement de téléphone tous les 30 jours, clés bloquées, éventuel essai une fois par téléphone)</td><td>Uniquement hashes et dates</td><td>Intérêt légitime (art. 6, par. 1, point f) à prévenir les utilisations frauduleuses ; vous pouvez vous y opposer (point 10)</td><td>Dernier changement de téléphone : 60 jours. Essais : 12 mois. Clés bloquées : tant que nécessaire</td></tr>
-    <tr><td>Vérification et téléchargement des mises à jour ; fonctionnement et sécurité des serveurs</td><td>Adresse IP, type de client (User-Agent), heure, version demandée</td><td>Intérêt légitime (art. 6, par. 1, point f) à maintenir l'application et les serveurs sûrs et opérationnels</td><td>Journaux techniques des prestataires <span class="dc">[À CONFIRMER]</span></td></tr>
+    <tr><td>Vérification et téléchargement des mises à jour ; fonctionnement et sécurité des serveurs</td><td>Adresse IP, type de client (User-Agent), heure, version demandée</td><td>Intérêt légitime (art. 6, par. 1, point f) à maintenir l'application et les serveurs sûrs et opérationnels</td><td>Selon les politiques des prestataires (point 5)</td></tr>
   </table>
   </div>
   <p>Nous ne traitons pas vos données à des fins de marketing, de profilage ou de décisions automatisées. Les données de santé restent sur le téléphone jusqu'à ce que vous les supprimiez ou désinstalliez l'application ; les fichiers exportés restent là où vous les avez enregistrés.</p>
@@ -305,6 +303,7 @@
     <li><strong>Cloudflare</strong> (États-Unis) : serveur de licences (Workers), base de données des activations (D1), fichiers de mise à jour (R2) ;</li>
     <li><strong>Vercel</strong> (États-Unis) : hébergement du site marketplace-apps.com (page d'achat, vérification de version) ;</li>
     <li><strong>Resend</strong> (États-Unis) : envoi de l'e-mail contenant la clé ;</li>
+    <li>le <strong>service d'hébergement de la base de données du site</strong> : conservation des données des commandes ;</li>
     <li><strong>PayPal</strong> : paiement, en tant que responsable du traitement selon sa propre déclaration (point 6).</li>
   </ul>
   <p>
@@ -331,7 +330,6 @@
   </p>
   <p>
     Votre pays peut avoir des lois qui vous donnent des droits supplémentaires, y compris sur les données de santé (par exemple, aux États-Unis, certaines lois d'États sur les données de santé des consommateurs). Cette politique est rédigée sur la base du droit de l'Union européenne et du droit italien : <strong>nous n'avons pas vérifié la conformité aux lois de chaque pays</strong>. Rappelez-vous que vos données de santé restent uniquement sur votre téléphone et que nous ne les recevons pas. Pour toute demande, écrivez-nous (point 1).
-    <span class="dc">[À VÉRIFIER avec un professionnel]</span>
   </p>
 
   <h2>12. Sécurité</h2>

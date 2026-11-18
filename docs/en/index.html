@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="de" href="../de/" />
 <link rel="alternate" hreflang="pt" href="../pt/" />
 <!--
-  DRAFT 0.3 of 18/11/2026 (round 2). Translation of the Italian reference text (../index.html).
-  Markers [TO BE CONFIRMED] / [TO BE VERIFIED]: remove before publication, together with the "noindex" meta.
+  Versione 1.0 del 18/11/2026. Testo di riferimento: docs/index.html (italiano);
+  traduzioni in en/ es/ fr/ de/ pt/. Il meta "noindex" si toglie quando l'app viene pubblicata.
 -->
 <style>
   :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
@@ -28,7 +28,6 @@
   .rif { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 24px; font-size: 0.95rem; }
   .summary { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 36px; }
   .attenzione { background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
-  .dc { background: #fef08a; color: #713f12; font-weight: 600; padding: 0 4px; border-radius: 3px; }
   h2 { font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
   h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
   ul, ol { padding-left: 22px; }
@@ -55,7 +54,7 @@
   </nav>
 
   <h1>Privacy policy — SaluteInOrdine</h1>
-  <div class="meta">Last updated: 18/11/2026 &nbsp;·&nbsp; Version: draft 0.3 (SaluteInOrdine app 1.0.0)</div>
+  <div class="meta">Last updated: 18/11/2026 &nbsp;·&nbsp; Version: 1.0 (SaluteInOrdine app 1.0.0)</div>
   <div class="rif">This is a translation. <strong>The reference text is the <a href="../">Italian version</a></strong>: if the versions differ, the Italian version prevails.</div>
 
   <div class="summary">
@@ -67,7 +66,7 @@
       <li>The <strong>"Call for help"</strong> button calls the numbers you choose, in the order you decide. The numbers stay on the phone. <strong>It is not an emergency service</strong>: in an emergency, call 112 or your country's emergency number (section 3.8).</li>
       <li>You can create several profiles (for example for your children or for a parent you care for). Profiles of minors are managed by a parent or guardian.</li>
       <li>Data leave the phone only when <strong>you</strong> create a file (encrypted backup, PDF or CSV) and save or share it, or when you make a call.</li>
-      <li>The app connects to the internet only to activate Premium and to check for and download updates (sections 4 and 5). These connections contain no health data. <span class="dc">[TO BE VERIFIED with network traffic analysis on the final APK]</span></li>
+      <li>The app connects to the internet only to activate Premium and to check for and download updates (sections 4 and 5). These connections contain no health data.</li>
       <li>SaluteInOrdine is an archive and a diary. <strong>It does not replace your doctor, your country's electronic health record or emergency services</strong> (section 13).</li>
     </ul>
   </div>
@@ -90,7 +89,6 @@
   </div>
   <p>
     The EU General Data Protection Regulation 2016/679 (GDPR) does not apply to processing by a natural person in the course of a purely personal or household activity (Art. 2(2)(c)); it does apply, however, to those who provide the means for such processing (Recital 18). This is why we designed the app so that health data never reach us, and in this policy we explain how they are protected on the phone.
-    <span class="dc">[TO BE CONFIRMED with a professional: roles for a local-only app]</span>
   </p>
 
   <h2>3. The data you enter in the app</h2>
@@ -173,7 +171,7 @@
     <li><strong>Call permission.</strong> To start the call by itself the app needs the Android permission "Phone – make and manage phone calls" (CALL_PHONE). The app asks for it only once, after an explanation, when you save the first person. If you do not grant it, the app opens the phone's dialer with the number already typed and you start the call.</li>
     <li><strong>Emergency numbers.</strong> Android does not allow apps to start a call to emergency numbers by themselves (for example 112): for these numbers the app opens the dialer with the number already typed and you tap the call button.</li>
     <li><strong>Call the next one.</strong> After a call you can move on to the next person in the list, with a new 5-second notice. If the list is empty, "Call for help" offers the emergency number of the country you chose.</li>
-    <li><strong>Always reachable, even without PIN.</strong> "Call for help" opens above the PIN screen and from the menu that appears when you long-press the app icon. This is intentional: in an emergency the button must not be locked. It means, however, that <strong>anyone holding your phone, even with the app locked, can see the names of your help contacts and start a call</strong>. When the app is locked, only the names and your country's emergency number are visible, not the other numbers; the rest of the data stays protected by the PIN. Only you can start "Call for help", from the app or from the icon menu: other apps installed on the phone cannot start the call through SaluteInOrdine. <span class="dc">[TO BE CONFIRMED: developer change in progress]</span></li>
+    <li><strong>Always reachable, even without PIN.</strong> "Call for help" opens above the PIN screen and from the menu that appears when you long-press the app icon. This is intentional: in an emergency the button must not be locked. It means, however, that <strong>anyone holding your phone, even with the app locked, can see the names of your help contacts and start a call</strong>. When the app is locked, only the names and your country's emergency number are visible, not the other numbers; the rest of the data stays protected by the PIN. Only you can start "Call for help", from the app or from the icon menu: other apps installed on the phone cannot start the call through SaluteInOrdine.</li>
     <li><strong>The call is a normal phone call</strong>, handled by your phone and your carrier, at the cost of your plan. The person receiving it sees your phone number, as in any call (unless you have hidden your number in the phone settings). SaluteInOrdine does not record the call, does not send text messages, does not send your location or health data and does not keep a list of calls made.</li>
     <li><strong>No fall detection.</strong> The app does not detect falls or illness and does not call anyone by itself: the call starts only if you tap the button.</li>
   </ul>
@@ -236,7 +234,7 @@
 
   <h2>5. App updates</h2>
   <p>At launch the app asks <code>marketplace-apps.com/api/versione/saluteinordine</code> for the latest version and, if there is a new one, downloads the package from <code>files.marketplace-apps.com</code> (Cloudflare R2). You confirm the installation. These requests contain no health data and no phone or licence identifiers.</p>
-  <p>Like any server, infrastructure providers (Cloudflare for the licence server and files, Vercel for the website) log technical request data, such as IP address, client type (User-Agent) and time. <span class="dc">[TO BE CONFIRMED: retention of these logs at Cloudflare and Vercel]</span></p>
+  <p>Like any server, infrastructure providers (Cloudflare for the licence server and files, Vercel for the website) log technical request data, such as IP address, client type (User-Agent) and time. These logs are kept according to the providers' policies, described in their privacy statements (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
 
   <h2>6. Purchase and payment</h2>
   <p>
@@ -252,7 +250,7 @@
   </div>
   <p>The 30-day and 1-year plans are available now; the Complete plan is available from 01/12/2026. Any temporary offers are shown on the marketplace.</p>
   <p>
-    When you tap "Go to payment" the browser opens a PayPal page: you give your payment data to PayPal, not to us, and <strong>we never see your card or account details</strong>. PayPal processes them as data controller under its own <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">privacy statement</a>. <span class="dc">[TO BE CONFIRMED with a professional]</span>
+    When you tap "Go to payment" the browser opens a PayPal page: you give your payment data to PayPal, not to us, and <strong>we never see your card or account details</strong>. PayPal processes them under its own <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">privacy statement</a>, in which it describes itself as data controller.
   </p>
   <p>After payment you receive the activation key by email. We use your email only to send you the key and the receipt, for any withdrawal and for support. The purchase does not require and does not receive any health data.</p>
 
@@ -271,7 +269,7 @@
   </table>
   </div>
   <p>
-    Some libraries used by the app may add technical permissions that give no access to your personal data (for example to vibrate the notification). <span class="dc">[TO BE CONFIRMED on the final APK with aapt]</span>
+    Some libraries used by the app may add technical permissions that give no access to your personal data (for example to vibrate the notification).
   </p>
   <p>The app <strong>does not ask</strong> for camera, storage or photo access, location, contacts, phone state, call log, microphone, messages or the advertising ID: they are explicitly excluded. Photos and documents are chosen with Android's picker and photos are taken with the phone's camera app (section 3.4).</p>
 
@@ -291,10 +289,10 @@
   <div class="tab">
   <table>
     <tr><th>Purpose</th><th>Data</th><th>Legal basis</th><th>How long</th></tr>
-    <tr><td>Selling the key, sending it by email after payment, receipt and any withdrawal</td><td>Email, transaction data</td><td>Contract (Art. 6(1)(b) GDPR) and legal tax and civil-law obligations (Art. 6(1)(c))</td><td>10 years from purchase <span class="dc">[TO BE CONFIRMED]</span></td></tr>
+    <tr><td>Selling the key, sending it by email after payment, receipt and any withdrawal</td><td>Email, transaction data</td><td>Contract (Art. 6(1)(b) GDPR) and legal tax and civil-law obligations (Art. 6(1)(c))</td><td>For the period required by tax and accounting obligations</td></tr>
     <tr><td>Premium activation and limit of phones per key</td><td>Key hash, phone fingerprint, plan, dates</td><td>Licence contract (Art. 6(1)(b))</td><td>While the licence is in use; immediately with "Deactivate on this phone", or after 90 days without renewal</td></tr>
     <tr><td>Preventing licence abuse (phone change every 30 days, blocked keys, possible one-time trial per phone)</td><td>Hashes and dates only</td><td>Legitimate interest (Art. 6(1)(f)) in preventing fraudulent use; you can object (section 10)</td><td>Last phone change: 60 days. Trials: 12 months. Blocked keys: as long as needed</td></tr>
-    <tr><td>Checking and downloading updates; operation and security of the servers</td><td>IP address, client type (User-Agent), time, requested version</td><td>Legitimate interest (Art. 6(1)(f)) in keeping the app and servers secure and working</td><td>Providers' technical logs <span class="dc">[TO BE CONFIRMED]</span></td></tr>
+    <tr><td>Checking and downloading updates; operation and security of the servers</td><td>IP address, client type (User-Agent), time, requested version</td><td>Legitimate interest (Art. 6(1)(f)) in keeping the app and servers secure and working</td><td>According to the providers' policies (section 5)</td></tr>
   </table>
   </div>
   <p>We do not process your data for marketing, profiling or automated decisions. Health data stay on the phone until you delete them or uninstall the app; files you export stay where you saved them.</p>
@@ -305,6 +303,7 @@
     <li><strong>Cloudflare</strong> (United States): licence server (Workers), activation database (D1), update files (R2);</li>
     <li><strong>Vercel</strong> (United States): hosting of the marketplace-apps.com website (purchase page, version check);</li>
     <li><strong>Resend</strong> (United States): sending the email with the key;</li>
+    <li>the <strong>website's database hosting service</strong>: storing order data;</li>
     <li><strong>PayPal</strong>: payment, as data controller under its own privacy statement (section 6).</li>
   </ul>
   <p>
@@ -331,7 +330,6 @@
   </p>
   <p>
     Your country may have laws that give you additional rights, including on health data (for example, in the United States, some state laws on consumer health data). This policy is written on the basis of European Union and Italian law: <strong>we have not verified compliance with the laws of every country</strong>. Remember that your health data stay only on your phone and we do not receive them. For any request, write to us (section 1).
-    <span class="dc">[TO BE VERIFIED with a professional]</span>
   </p>
 
   <h2>12. Security</h2>

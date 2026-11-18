@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="de" href="./" />
 <link rel="alternate" hreflang="pt" href="../pt/" />
 <!--
-  ENTWURF 0.3 vom 18.11.2026 (Runde 2). Übersetzung des italienischen Referenztextes (../index.html).
-  Markierungen [ZU BESTÄTIGEN] / [ZU PRÜFEN]: vor der Veröffentlichung entfernen, zusammen mit dem Meta-Tag "noindex".
+  Versione 1.0 del 18/11/2026. Testo di riferimento: docs/index.html (italiano);
+  traduzioni in en/ es/ fr/ de/ pt/. Il meta "noindex" si toglie quando l'app viene pubblicata.
 -->
 <style>
   :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
@@ -28,7 +28,6 @@
   .rif { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 24px; font-size: 0.95rem; }
   .summary { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 36px; }
   .attenzione { background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
-  .dc { background: #fef08a; color: #713f12; font-weight: 600; padding: 0 4px; border-radius: 3px; }
   h2 { font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
   h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
   ul, ol { padding-left: 22px; }
@@ -55,7 +54,7 @@
   </nav>
 
   <h1>Datenschutzerklärung — SaluteInOrdine</h1>
-  <div class="meta">Letzte Aktualisierung: 18.11.2026 &nbsp;·&nbsp; Version: Entwurf 0.3 (App SaluteInOrdine 1.0.0)</div>
+  <div class="meta">Letzte Aktualisierung: 18.11.2026 &nbsp;·&nbsp; Version: 1.0 (App SaluteInOrdine 1.0.0)</div>
   <div class="rif">Dies ist eine Übersetzung. <strong>Maßgeblich ist die <a href="../">italienische Fassung</a></strong>: Bei Abweichungen zwischen den Fassungen gilt die italienische.</div>
 
   <div class="summary">
@@ -67,7 +66,7 @@
       <li>Die Taste <strong>„Hilfe rufen“</strong> ruft die Nummern an, die Sie auswählen, in der Reihenfolge, die Sie festlegen. Die Nummern bleiben auf dem Telefon. <strong>Sie ist kein Notrufdienst</strong>: Rufen Sie im Notfall die 112 oder die Notrufnummer Ihres Landes an (Punkt 3.8).</li>
       <li>Sie können mehrere Profile anlegen (zum Beispiel für Ihre Kinder oder für einen Elternteil, den Sie betreuen). Profile von Minderjährigen verwaltet ein Elternteil oder Vormund.</li>
       <li>Daten verlassen das Telefon nur, wenn <strong>Sie</strong> eine Datei erstellen (verschlüsselte Sicherung, PDF oder CSV) und sie speichern oder teilen, oder wenn Sie einen Anruf tätigen.</li>
-      <li>Die App verbindet sich nur mit dem Internet, um Premium zu aktivieren und Updates zu prüfen und herunterzuladen (Punkte 4 und 5). Diese Verbindungen enthalten keine Gesundheitsdaten. <span class="dc">[ZU PRÜFEN durch Analyse des Netzwerkverkehrs der finalen APK]</span></li>
+      <li>Die App verbindet sich nur mit dem Internet, um Premium zu aktivieren und Updates zu prüfen und herunterzuladen (Punkte 4 und 5). Diese Verbindungen enthalten keine Gesundheitsdaten.</li>
       <li>SaluteInOrdine ist ein Archiv und ein Kalender. <strong>Sie ersetzt weder den Arzt noch die elektronische Patientenakte Ihres Landes noch Notrufdienste</strong> (Punkt 13).</li>
     </ul>
   </div>
@@ -90,7 +89,6 @@
   </div>
   <p>
     Die Verordnung (EU) 2016/679 (DSGVO) gilt nicht für die Verarbeitung durch natürliche Personen zur Ausübung ausschließlich persönlicher oder familiärer Tätigkeiten (Art. 2 Abs. 2 Buchst. c); sie gilt jedoch für diejenigen, die die Mittel für solche Verarbeitungen bereitstellen (Erwägungsgrund 18). Deshalb haben wir die App so gestaltet, dass Gesundheitsdaten nie zu uns gelangen, und erklären in dieser Datenschutzerklärung, wie sie auf dem Telefon geschützt sind.
-    <span class="dc">[ZU BESTÄTIGEN durch einen Fachmann]</span>
   </p>
 
   <h2>3. Die Daten, die Sie in die App eingeben</h2>
@@ -173,7 +171,7 @@
     <li><strong>Anrufberechtigung.</strong> Damit der Anruf von selbst startet, braucht die App die Android-Berechtigung „Telefon – Anrufe tätigen und verwalten“ (CALL_PHONE). Sie fragt nur einmal danach, nach einer Erklärung, wenn Sie die erste Person speichern. Wenn Sie sie nicht erteilen, öffnet die App die Wähltastatur des Telefons mit bereits eingetragener Nummer, und Sie starten den Anruf.</li>
     <li><strong>Notrufnummern.</strong> Android erlaubt Apps nicht, Anrufe an Notrufnummern (zum Beispiel die 112) selbst zu starten: Für diese Nummern öffnet die App die Wähltastatur mit bereits eingetragener Nummer, und Sie tippen auf die Anruftaste.</li>
     <li><strong>Nächsten anrufen.</strong> Nach einem Anruf können Sie zur nächsten Person der Liste wechseln, mit einer neuen 5-Sekunden-Vorwarnung. Ist die Liste leer, bietet „Hilfe rufen“ die Notrufnummer des gewählten Landes an.</li>
-    <li><strong>Immer erreichbar, auch ohne PIN.</strong> „Hilfe rufen“ öffnet sich über dem PIN-Bildschirm und über das Menü, das beim langen Drücken auf das App-Symbol erscheint. Das ist gewollt: Im Notfall darf die Taste nicht gesperrt sein. Es bedeutet aber, dass <strong>jeder, der Ihr Telefon in der Hand hat, auch bei gesperrter App, die Namen Ihrer Hilfekontakte sehen und einen Anruf starten kann</strong>. Bei gesperrter App sind nur die Namen und die Notrufnummer des Landes sichtbar, nicht die übrigen Nummern; die übrigen Daten bleiben durch die PIN geschützt. Nur Sie können „Hilfe rufen“ starten, aus der App oder über das Symbolmenü: Andere installierte Apps können den Anruf nicht über SaluteInOrdine auslösen. <span class="dc">[ZU BESTÄTIGEN: Änderung des Entwicklers läuft]</span></li>
+    <li><strong>Immer erreichbar, auch ohne PIN.</strong> „Hilfe rufen“ öffnet sich über dem PIN-Bildschirm und über das Menü, das beim langen Drücken auf das App-Symbol erscheint. Das ist gewollt: Im Notfall darf die Taste nicht gesperrt sein. Es bedeutet aber, dass <strong>jeder, der Ihr Telefon in der Hand hat, auch bei gesperrter App, die Namen Ihrer Hilfekontakte sehen und einen Anruf starten kann</strong>. Bei gesperrter App sind nur die Namen und die Notrufnummer des Landes sichtbar, nicht die übrigen Nummern; die übrigen Daten bleiben durch die PIN geschützt. Nur Sie können „Hilfe rufen“ starten, aus der App oder über das Symbolmenü: Andere installierte Apps können den Anruf nicht über SaluteInOrdine auslösen.</li>
     <li><strong>Der Anruf ist ein normaler Telefonanruf</strong>, abgewickelt von Ihrem Telefon und Ihrem Netzbetreiber, zu den Kosten Ihres Tarifs. Die angerufene Person sieht Ihre Telefonnummer wie bei jedem Anruf (es sei denn, Sie haben Ihre Nummer in den Telefoneinstellungen unterdrückt). SaluteInOrdine zeichnet den Anruf nicht auf, sendet keine SMS, sendet weder Ihren Standort noch Gesundheitsdaten und führt keine Liste der getätigten Anrufe.</li>
     <li><strong>Keine Sturzerkennung.</strong> Die App erkennt weder Stürze noch Unwohlsein und ruft niemanden von selbst an: Der Anruf startet nur, wenn Sie auf die Taste tippen.</li>
   </ul>
@@ -236,7 +234,7 @@
 
   <h2>5. App-Updates</h2>
   <p>Beim Start fragt die App bei <code>marketplace-apps.com/api/versione/saluteinordine</code> nach der neuesten Version und lädt, falls es eine neue gibt, das Paket von <code>files.marketplace-apps.com</code> (Cloudflare R2) herunter. Sie bestätigen die Installation. Diese Anfragen enthalten keine Gesundheitsdaten und keine Telefon- oder Lizenzkennungen.</p>
-  <p>Wie jeder Server protokollieren die Infrastrukturanbieter (Cloudflare für Lizenzserver und Dateien, Vercel für die Website) technische Anfragedaten wie IP-Adresse, Client-Typ (User-Agent) und Uhrzeit. <span class="dc">[ZU BESTÄTIGEN: Speicherdauer dieser Protokolle]</span></p>
+  <p>Wie jeder Server protokollieren die Infrastrukturanbieter (Cloudflare für Lizenzserver und Dateien, Vercel für die Website) technische Anfragedaten wie IP-Adresse, Client-Typ (User-Agent) und Uhrzeit. Diese Protokolle werden nach den Richtlinien der Anbieter gespeichert, die in deren Datenschutzerklärungen angegeben sind (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
 
   <h2>6. Kauf und Zahlung</h2>
   <p>
@@ -252,7 +250,7 @@
   </div>
   <p>Die Tarife 30 Tage und 1 Jahr sind sofort verfügbar; der Tarif Komplett ist ab 01.12.2026 verfügbar. Eventuelle befristete Angebote werden auf dem Marktplatz angegeben.</p>
   <p>
-    Wenn Sie auf „Zur Zahlung“ tippen, öffnet sich im Browser eine PayPal-Seite: Ihre Zahlungsdaten geben Sie PayPal, nicht uns, und <strong>wir sehen nie die Daten Ihrer Karte oder Ihres Kontos</strong>. PayPal verarbeitet sie als Verantwortlicher gemäß seiner eigenen <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">Datenschutzerklärung</a>. <span class="dc">[ZU BESTÄTIGEN durch einen Fachmann]</span>
+    Wenn Sie auf „Zur Zahlung“ tippen, öffnet sich im Browser eine PayPal-Seite: Ihre Zahlungsdaten geben Sie PayPal, nicht uns, und <strong>wir sehen nie die Daten Ihrer Karte oder Ihres Kontos</strong>. PayPal verarbeitet sie gemäß seiner eigenen <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">Datenschutzerklärung</a>, in der es sich als Verantwortlichen bezeichnet.
   </p>
   <p>Nach der Zahlung erhalten Sie den Aktivierungsschlüssel per E-Mail. Wir verwenden die E-Mail nur, um Ihnen den Schlüssel und die Quittung zu senden, für einen eventuellen Widerruf und für den Support. Der Kauf erfordert und erhält keine Gesundheitsdaten.</p>
 
@@ -271,7 +269,7 @@
   </table>
   </div>
   <p>
-    Einige von der App verwendete Bibliotheken können technische Berechtigungen hinzufügen, die keinen Zugriff auf Ihre personenbezogenen Daten geben (zum Beispiel, um die Benachrichtigung vibrieren zu lassen). <span class="dc">[ZU BESTÄTIGEN in der finalen APK mit aapt]</span>
+    Einige von der App verwendete Bibliotheken können technische Berechtigungen hinzufügen, die keinen Zugriff auf Ihre personenbezogenen Daten geben (zum Beispiel, um die Benachrichtigung vibrieren zu lassen).
   </p>
   <p>Die App <strong>fragt nicht</strong> nach Berechtigungen für Kamera, Speicher- oder Fotozugriff, Standort, Kontakte, Telefonstatus, Anrufliste, Mikrofon, Nachrichten oder die Werbe-ID: Diese sind ausdrücklich ausgeschlossen. Fotos und Dokumente werden mit der Android-Auswahl gewählt, Fotos mit der Kamera-App des Telefons aufgenommen (Punkt 3.4).</p>
 
@@ -291,10 +289,10 @@
   <div class="tab">
   <table>
     <tr><th>Zweck</th><th>Daten</th><th>Rechtsgrundlage</th><th>Dauer</th></tr>
-    <tr><td>Verkauf des Schlüssels, Versand per E-Mail nach der Zahlung, Quittung und eventueller Widerruf</td><td>E-Mail, Transaktionsdaten</td><td>Vertrag (Art. 6 Abs. 1 Buchst. b DSGVO) und gesetzliche steuer- und zivilrechtliche Pflichten (Art. 6 Abs. 1 Buchst. c)</td><td>10 Jahre ab Kauf <span class="dc">[ZU BESTÄTIGEN]</span></td></tr>
+    <tr><td>Verkauf des Schlüssels, Versand per E-Mail nach der Zahlung, Quittung und eventueller Widerruf</td><td>E-Mail, Transaktionsdaten</td><td>Vertrag (Art. 6 Abs. 1 Buchst. b DSGVO) und gesetzliche steuer- und zivilrechtliche Pflichten (Art. 6 Abs. 1 Buchst. c)</td><td>Für die Dauer der steuerlichen und buchhalterischen Aufbewahrungspflichten</td></tr>
     <tr><td>Aktivierung von Premium und Begrenzung der Telefone pro Schlüssel</td><td>Hash des Schlüssels, Gerätefingerabdruck, Tarif, Daten</td><td>Lizenzvertrag (Art. 6 Abs. 1 Buchst. b)</td><td>Solange die Lizenz genutzt wird; sofort mit „Auf diesem Telefon deaktivieren“ oder nach 90 Tagen ohne Verlängerung</td></tr>
     <tr><td>Verhinderung von Lizenzmissbrauch (Telefonwechsel alle 30 Tage, gesperrte Schlüssel, eventuelle einmalige Testphase pro Telefon)</td><td>Nur Hashes und Daten</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 Buchst. f) an der Verhinderung missbräuchlicher Nutzung; Sie können widersprechen (Punkt 10)</td><td>Letzter Telefonwechsel: 60 Tage. Testphasen: 12 Monate. Gesperrte Schlüssel: solange nötig</td></tr>
-    <tr><td>Prüfen und Herunterladen von Updates; Betrieb und Sicherheit der Server</td><td>IP-Adresse, Client-Typ (User-Agent), Uhrzeit, angefragte Version</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 Buchst. f) am sicheren und funktionierenden Betrieb von App und Servern</td><td>Technische Protokolle der Anbieter <span class="dc">[ZU BESTÄTIGEN]</span></td></tr>
+    <tr><td>Prüfen und Herunterladen von Updates; Betrieb und Sicherheit der Server</td><td>IP-Adresse, Client-Typ (User-Agent), Uhrzeit, angefragte Version</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 Buchst. f) am sicheren und funktionierenden Betrieb von App und Servern</td><td>Nach den Richtlinien der Anbieter (Punkt 5)</td></tr>
   </table>
   </div>
   <p>Wir verarbeiten Ihre Daten nicht für Marketing, Profilbildung oder automatisierte Entscheidungen. Gesundheitsdaten bleiben auf dem Telefon, bis Sie sie löschen oder die App deinstallieren; exportierte Dateien bleiben dort, wo Sie sie gespeichert haben.</p>
@@ -305,6 +303,7 @@
     <li><strong>Cloudflare</strong> (USA): Lizenzserver (Workers), Aktivierungsdatenbank (D1), Update-Dateien (R2);</li>
     <li><strong>Vercel</strong> (USA): Hosting der Website marketplace-apps.com (Kaufseite, Versionsprüfung);</li>
     <li><strong>Resend</strong> (USA): Versand der E-Mail mit dem Schlüssel;</li>
+    <li>der <strong>Hosting-Dienst der Datenbank der Website</strong>: Speicherung der Bestelldaten;</li>
     <li><strong>PayPal</strong>: Zahlung, als Verantwortlicher gemäß eigener Datenschutzerklärung (Punkt 6).</li>
   </ul>
   <p>
@@ -331,7 +330,6 @@
   </p>
   <p>
     In Ihrem Land kann es Gesetze geben, die Ihnen zusätzliche Rechte geben, auch zu Gesundheitsdaten (zum Beispiel in den USA einige bundesstaatliche Gesetze zu Gesundheitsdaten von Verbrauchern). Diese Erklärung beruht auf dem Recht der Europäischen Union und Italiens: <strong>Wir haben die Vereinbarkeit mit den Gesetzen jedes Landes nicht geprüft</strong>. Denken Sie daran, dass Ihre Gesundheitsdaten nur auf Ihrem Telefon bleiben und wir sie nicht erhalten. Für jede Anfrage schreiben Sie uns (Punkt 1).
-    <span class="dc">[ZU PRÜFEN durch einen Fachmann]</span>
   </p>
 
   <h2>12. Sicherheit</h2>

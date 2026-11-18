@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="de" href="../de/" />
 <link rel="alternate" hreflang="pt" href="./" />
 <!--
-  RASCUNHO 0.3 de 18/11/2026 (ronda 2). Tradução do texto de referência italiano (../index.html).
-  Marcas [A CONFIRMAR] / [A VERIFICAR]: retirar antes da publicação, juntamente com o meta "noindex".
+  Versione 1.0 del 18/11/2026. Testo di riferimento: docs/index.html (italiano);
+  traduzioni in en/ es/ fr/ de/ pt/. Il meta "noindex" si toglie quando l'app viene pubblicata.
 -->
 <style>
   :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
@@ -28,7 +28,6 @@
   .rif { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 24px; font-size: 0.95rem; }
   .summary { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 36px; }
   .attenzione { background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
-  .dc { background: #fef08a; color: #713f12; font-weight: 600; padding: 0 4px; border-radius: 3px; }
   h2 { font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
   h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
   ul, ol { padding-left: 22px; }
@@ -55,7 +54,7 @@
   </nav>
 
   <h1>Política de privacidade — SaluteInOrdine</h1>
-  <div class="meta">Última atualização: 18/11/2026 &nbsp;·&nbsp; Versão: rascunho 0.3 (app SaluteInOrdine 1.0.0)</div>
+  <div class="meta">Última atualização: 18/11/2026 &nbsp;·&nbsp; Versão: 1.0 (app SaluteInOrdine 1.0.0)</div>
   <div class="rif">Esta é uma tradução. <strong>O texto de referência é a <a href="../">versão italiana</a></strong>: se as versões divergirem, prevalece a versão italiana.</div>
 
   <div class="summary">
@@ -67,7 +66,7 @@
       <li>O botão <strong>«Pedir ajuda»</strong> liga para os números que escolher, pela ordem que decidir. Os números ficam no telemóvel. <strong>Não é um serviço de emergência</strong>: em caso de emergência ligue para o 112 ou para o número de emergência do seu país (ponto 3.8).</li>
       <li>Pode criar vários perfis (por exemplo para os seus filhos ou para um pai ou mãe de quem cuida). Os perfis de menores são geridos por um progenitor ou tutor.</li>
       <li>Os dados só saem do telemóvel quando é <strong>você</strong> a criar um ficheiro (cópia de segurança cifrada, PDF ou CSV) e a guardá-lo ou partilhá-lo, ou quando faz uma chamada.</li>
-      <li>A app liga-se à internet apenas para ativar o Premium e para verificar e descarregar atualizações (pontos 4 e 5). Estas ligações não contêm dados de saúde. <span class="dc">[A VERIFICAR com análise do tráfego de rede no APK final]</span></li>
+      <li>A app liga-se à internet apenas para ativar o Premium e para verificar e descarregar atualizações (pontos 4 e 5). Estas ligações não contêm dados de saúde.</li>
       <li>O SaluteInOrdine é um arquivo e uma agenda. <strong>Não substitui o médico, o registo de saúde eletrónico do seu país nem os serviços de emergência</strong> (ponto 13).</li>
     </ul>
   </div>
@@ -90,7 +89,6 @@
   </div>
   <p>
     O Regulamento (UE) 2016/679 (RGPD) não se aplica ao tratamento efetuado por uma pessoa singular no exercício de atividades exclusivamente pessoais ou domésticas (art. 2.º, n.º 2, alínea c); aplica-se, no entanto, a quem fornece os meios para esses tratamentos (considerando 18). Por isso concebemos a app de forma a que os dados de saúde nunca cheguem até nós, e nesta política explicamos como são protegidos no telemóvel.
-    <span class="dc">[A CONFIRMAR com um profissional]</span>
   </p>
 
   <h2>3. Os dados que introduz na app</h2>
@@ -173,7 +171,7 @@
     <li><strong>Permissão de chamadas.</strong> Para que a chamada seja feita sozinha, a app precisa da permissão do Android «Telefone – fazer e gerir chamadas» (CALL_PHONE). Pede-a uma única vez, depois de uma explicação, quando guarda a primeira pessoa. Se não a conceder, a app abre o teclado do telemóvel com o número já escrito e é você que inicia a chamada.</li>
     <li><strong>Números de emergência.</strong> O Android não permite que as apps iniciem sozinhas uma chamada para números de emergência (por exemplo o 112): para estes números a app abre o teclado com o número já escrito e você toca no botão de chamada.</li>
     <li><strong>Ligar ao seguinte.</strong> Depois de uma chamada pode passar à pessoa seguinte da lista, com um novo aviso de 5 segundos. Se a lista estiver vazia, «Pedir ajuda» propõe o número de emergência do país escolhido.</li>
-    <li><strong>Sempre acessível, mesmo sem PIN.</strong> «Pedir ajuda» abre-se por cima do ecrã do PIN e a partir do menu que aparece ao manter premido o ícone da app. É intencional: numa emergência o botão não pode estar bloqueado. Significa, porém, que <strong>quem tiver na mão o seu telemóvel, mesmo com a app bloqueada, pode ver os nomes dos seus contactos de ajuda e iniciar uma chamada</strong>. Com a app bloqueada só se veem os nomes e o número de emergência do país, não os outros números; os restantes dados continuam protegidos pelo PIN. Só você pode iniciar «Pedir ajuda», a partir da app ou do menu do ícone: as outras apps instaladas no telemóvel não podem iniciar a chamada através do SaluteInOrdine. <span class="dc">[A CONFIRMAR: alteração do programador em curso]</span></li>
+    <li><strong>Sempre acessível, mesmo sem PIN.</strong> «Pedir ajuda» abre-se por cima do ecrã do PIN e a partir do menu que aparece ao manter premido o ícone da app. É intencional: numa emergência o botão não pode estar bloqueado. Significa, porém, que <strong>quem tiver na mão o seu telemóvel, mesmo com a app bloqueada, pode ver os nomes dos seus contactos de ajuda e iniciar uma chamada</strong>. Com a app bloqueada só se veem os nomes e o número de emergência do país, não os outros números; os restantes dados continuam protegidos pelo PIN. Só você pode iniciar «Pedir ajuda», a partir da app ou do menu do ícone: as outras apps instaladas no telemóvel não podem iniciar a chamada através do SaluteInOrdine.</li>
     <li><strong>A chamada é uma chamada telefónica normal</strong>, gerida pelo seu telemóvel e pelo seu operador, com o custo do seu tarifário. Quem a recebe vê o seu número de telefone, como em qualquer chamada (a menos que tenha ocultado o número nas definições do telemóvel). O SaluteInOrdine não grava a chamada, não envia SMS, não envia a sua localização nem dados de saúde e não guarda uma lista das chamadas feitas.</li>
     <li><strong>Sem deteção de quedas.</strong> A app não deteta quedas nem mal-estar e não liga a ninguém sozinha: a chamada só é feita se tocar no botão.</li>
   </ul>
@@ -236,7 +234,7 @@
 
   <h2>5. Atualizações da app</h2>
   <p>No arranque, a app pergunta a <code>marketplace-apps.com/api/versione/saluteinordine</code> qual é a versão mais recente e, se houver uma nova, descarrega o pacote de <code>files.marketplace-apps.com</code> (Cloudflare R2). É você quem confirma a instalação. Estes pedidos não contêm dados de saúde nem identificadores do telemóvel ou da licença.</p>
-  <p>Como qualquer servidor, os fornecedores da infraestrutura (Cloudflare para o servidor de licenças e os ficheiros, Vercel para o site) registam dados técnicos dos pedidos, como endereço IP, tipo de cliente (User-Agent) e hora. <span class="dc">[A CONFIRMAR: prazos de conservação destes registos]</span></p>
+  <p>Como qualquer servidor, os fornecedores da infraestrutura (Cloudflare para o servidor de licenças e os ficheiros, Vercel para o site) registam dados técnicos dos pedidos, como endereço IP, tipo de cliente (User-Agent) e hora. Estes registos são conservados segundo as políticas dos fornecedores, indicadas nas respetivas políticas de privacidade (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
 
   <h2>6. Compra e pagamento</h2>
   <p>
@@ -252,7 +250,7 @@
   </div>
   <p>Os planos de 30 dias e de 1 ano estão disponíveis já; o plano Completo está disponível a partir de 01/12/2026. Eventuais ofertas temporárias são indicadas no marketplace.</p>
   <p>
-    Quando toca em «Ir para o pagamento», o navegador abre uma página do PayPal: os dados de pagamento são dados ao PayPal, não a nós, e <strong>nunca vemos os dados do seu cartão ou da sua conta</strong>. O PayPal trata-os como responsável pelo tratamento segundo a sua própria <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">declaração de privacidade</a>. <span class="dc">[A CONFIRMAR com um profissional]</span>
+    Quando toca em «Ir para o pagamento», o navegador abre uma página do PayPal: os dados de pagamento são dados ao PayPal, não a nós, e <strong>nunca vemos os dados do seu cartão ou da sua conta</strong>. O PayPal trata-os segundo a sua própria <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">declaração de privacidade</a>, na qual se indica como responsável pelo tratamento.
   </p>
   <p>Após o pagamento recebe por e-mail a chave de ativação. Usamos o e-mail apenas para lhe enviar a chave e o recibo, para um eventual direito de livre resolução e para a assistência. A compra não requer nem recebe quaisquer dados de saúde.</p>
 
@@ -271,7 +269,7 @@
   </table>
   </div>
   <p>
-    Algumas bibliotecas usadas pela app podem acrescentar permissões técnicas, que não dão acesso aos seus dados pessoais (por exemplo para fazer vibrar a notificação). <span class="dc">[A CONFIRMAR no APK final com aapt]</span>
+    Algumas bibliotecas usadas pela app podem acrescentar permissões técnicas, que não dão acesso aos seus dados pessoais (por exemplo para fazer vibrar a notificação).
   </p>
   <p>A app <strong>não pede</strong> permissões de câmara, acesso à memória ou às fotografias, localização, contactos, estado do telemóvel, registo de chamadas, microfone, mensagens nem o identificador de publicidade: estão excluídas de forma explícita. Fotografias e documentos escolhem-se com o seletor do Android e as fotografias tiram-se com a app de câmara do telemóvel (ponto 3.4).</p>
 
@@ -291,10 +289,10 @@
   <div class="tab">
   <table>
     <tr><th>Finalidade</th><th>Dados</th><th>Fundamento jurídico</th><th>Prazo</th></tr>
-    <tr><td>Venda da chave, envio por e-mail após o pagamento, recibo e eventual livre resolução</td><td>E-mail, dados da transação</td><td>Contrato (art. 6.º, n.º 1, alínea b, RGPD) e obrigações legais fiscais e civis (art. 6.º, n.º 1, alínea c)</td><td>10 anos a contar da compra <span class="dc">[A CONFIRMAR]</span></td></tr>
+    <tr><td>Venda da chave, envio por e-mail após o pagamento, recibo e eventual livre resolução</td><td>E-mail, dados da transação</td><td>Contrato (art. 6.º, n.º 1, alínea b, RGPD) e obrigações legais fiscais e civis (art. 6.º, n.º 1, alínea c)</td><td>Pelo prazo previsto pelas obrigações fiscais e contabilísticas</td></tr>
     <tr><td>Ativação do Premium e limite de telemóveis por chave</td><td>Hash da chave, impressão do telemóvel, plano, datas</td><td>Contrato de licença (art. 6.º, n.º 1, alínea b)</td><td>Enquanto a licença estiver em uso; de imediato com «Desativar neste telemóvel», ou após 90 dias sem renovação</td></tr>
     <tr><td>Prevenção de abusos das licenças (mudança de telemóvel a cada 30 dias, chaves bloqueadas, eventual teste uma vez por telemóvel)</td><td>Apenas hashes e datas</td><td>Interesse legítimo (art. 6.º, n.º 1, alínea f) em prevenir utilizações fraudulentas; pode opor-se (ponto 10)</td><td>Última mudança de telemóvel: 60 dias. Testes: 12 meses. Chaves bloqueadas: enquanto for necessário</td></tr>
-    <tr><td>Verificação e descarga de atualizações; funcionamento e segurança dos servidores</td><td>Endereço IP, tipo de cliente (User-Agent), hora, versão pedida</td><td>Interesse legítimo (art. 6.º, n.º 1, alínea f) em manter a app e os servidores seguros e a funcionar</td><td>Registos técnicos dos fornecedores <span class="dc">[A CONFIRMAR]</span></td></tr>
+    <tr><td>Verificação e descarga de atualizações; funcionamento e segurança dos servidores</td><td>Endereço IP, tipo de cliente (User-Agent), hora, versão pedida</td><td>Interesse legítimo (art. 6.º, n.º 1, alínea f) em manter a app e os servidores seguros e a funcionar</td><td>Segundo as políticas dos fornecedores (ponto 5)</td></tr>
   </table>
   </div>
   <p>Não tratamos os seus dados para marketing, definição de perfis ou decisões automatizadas. Os dados de saúde ficam no telemóvel até os apagar ou desinstalar a app; os ficheiros que exporta ficam onde os guardou.</p>
@@ -305,6 +303,7 @@
     <li><strong>Cloudflare</strong> (Estados Unidos): servidor de licenças (Workers), base de dados das ativações (D1), ficheiros de atualização (R2);</li>
     <li><strong>Vercel</strong> (Estados Unidos): alojamento do site marketplace-apps.com (página de compra, verificação da versão);</li>
     <li><strong>Resend</strong> (Estados Unidos): envio do e-mail com a chave;</li>
+    <li>o <strong>serviço de alojamento da base de dados do site</strong>: conservação dos dados das encomendas;</li>
     <li><strong>PayPal</strong>: pagamento, como responsável pelo tratamento segundo a sua própria declaração (ponto 6).</li>
   </ul>
   <p>
@@ -331,7 +330,6 @@
   </p>
   <p>
     No seu país podem existir leis que lhe dão direitos adicionais, incluindo sobre dados de saúde (por exemplo, nos Estados Unidos, algumas leis estaduais sobre dados de saúde dos consumidores). Esta política foi redigida com base no direito da União Europeia e italiano: <strong>não verificámos a conformidade com as leis de cada país</strong>. Lembre-se de que os seus dados de saúde ficam apenas no seu telemóvel e não os recebemos. Para qualquer pedido, escreva-nos (ponto 1).
-    <span class="dc">[A VERIFICAR com um profissional]</span>
   </p>
 
   <h2>12. Segurança</h2>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Política de privacidad — SaluteInOrdine</title>
+<link rel="alternate" hreflang="it" href="../" />
+<link rel="alternate" hreflang="en" href="../en/" />
+<link rel="alternate" hreflang="es" href="./" />
+<link rel="alternate" hreflang="fr" href="../fr/" />
+<link rel="alternate" hreflang="de" href="../de/" />
+<link rel="alternate" hreflang="pt" href="../pt/" />
+<!--
+  BORRADOR 0.3 del 18/11/2026 (ronda 2). Traducción del texto de referencia italiano (../index.html).
+  Marcas [POR CONFIRMAR] / [POR VERIFICAR]: quitarlas antes de publicar, junto con el meta "noindex".
+-->
+<style>
+  :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; }
+  .lingue { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: flex-end; font-size: 0.9rem; margin-bottom: 24px; }
+  .lingue a { text-decoration: none; }
+  .lingue a[aria-current="page"] { font-weight: 700; color: var(--text); text-decoration: underline; }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  .rif { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 24px; font-size: 0.95rem; }
+  .summary { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 36px; }
+  .attenzione { background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+  .dc { background: #fef08a; color: #713f12; font-weight: 600; padding: 0 4px; border-radius: 3px; }
+  h2 { font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+  h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .tab { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  code { overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="lingue" aria-label="Idioma">
+    <a href="../" hreflang="it" lang="it">Italiano</a>
+    <a href="../en/" hreflang="en" lang="en">English</a>
+    <a href="./" hreflang="es" lang="es" aria-current="page">Español</a>
+    <a href="../fr/" hreflang="fr" lang="fr">Français</a>
+    <a href="../de/" hreflang="de" lang="de">Deutsch</a>
+    <a href="../pt/" hreflang="pt" lang="pt">Português</a>
+  </nav>
+
+  <h1>Política de privacidad — SaluteInOrdine</h1>
+  <div class="meta">Última actualización: 18/11/2026 &nbsp;·&nbsp; Versión: borrador 0.3 (app SaluteInOrdine 1.0.0)</div>
+  <div class="rif">Esta es una traducción. <strong>El texto de referencia es la <a href="../">versión italiana</a></strong>: si las versiones difieren, prevalece la versión italiana.</div>
+
+  <div class="summary">
+    <strong>En resumen.</strong>
+    <ul>
+      <li><strong>Tus datos de salud y los de tu familia se quedan solo en tu teléfono.</strong> No los enviamos a ningún servidor, ni a nosotros ni a otros. No los vemos y, si los pierdes, no podemos recuperarlos.</li>
+      <li>Sin registro y sin cuenta. Sin publicidad, sin estadísticas de uso, sin informes automáticos de errores, sin inteligencia artificial.</li>
+      <li>La lectura del texto de las fotos se hace <strong>totalmente en el teléfono</strong>: fotos y texto no van a nadie (punto 3.5).</li>
+      <li>El botón <strong>«Pedir ayuda»</strong> llama a los números que eliges tú, en el orden que decides tú. Los números se quedan en el teléfono. <strong>No es un servicio de emergencias</strong>: en caso de emergencia llama al 112 o al número de emergencias de tu país (punto 3.8).</li>
+      <li>Puedes crear varios perfiles (por ejemplo para tus hijos o para un padre o madre al que cuidas). Los perfiles de menores los gestiona un progenitor o tutor.</li>
+      <li>Los datos salen del teléfono solo cuando <strong>tú</strong> creas un archivo (copia de seguridad cifrada, PDF o CSV) y lo guardas o compartes, o cuando haces una llamada.</li>
+      <li>La app se conecta a internet solo para activar Premium y para comprobar y descargar actualizaciones (puntos 4 y 5). Estas conexiones no contienen datos de salud. <span class="dc">[POR VERIFICAR con análisis del tráfico de red en el APK final]</span></li>
+      <li>SaluteInOrdine es un archivo y una agenda. <strong>No sustituye al médico, a la historia clínica electrónica de tu país ni a los servicios de emergencias</strong> (punto 13).</li>
+    </ul>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    Hubert Montero / Desarrollador independiente / SaluteInOrdine<br />
+    Correo: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Para cualquier cuestión sobre tus datos puedes escribir a la dirección indicada. No se ha designado un delegado de protección de datos (DPD).</p>
+
+  <h2>2. Quién trata qué datos</h2>
+  <p>En esta app hay dos grupos de datos, tratados de forma distinta.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Datos</th><th>Dónde están</th><th>Quién los trata</th></tr>
+    <tr><td>Datos de salud y personales que introduces en los perfiles, tus «Campos propios» y los números de «Pedir ayuda» (punto 3)</td><td>Solo en tu teléfono, en la memoria privada de la app</td><td>Tú, para ti y para tu familia. Nosotros proporcionamos la app, pero no recibimos estos datos ni tenemos forma de leerlos</td></tr>
+    <tr><td>Datos de compra, licencia y actualización (puntos 4, 5 y 6)</td><td>En los servidores del marketplace y de los proveedores del punto 9</td><td>Nosotros, como responsables del tratamiento</td></tr>
+  </table>
+  </div>
+  <p>
+    El Reglamento (UE) 2016/679 (RGPD) no se aplica al tratamiento efectuado por una persona física en el ejercicio de actividades exclusivamente personales o domésticas (art. 2, apdo. 2, letra c); sí se aplica, en cambio, a quienes proporcionan los medios para esos tratamientos (considerando 18). Por eso hemos diseñado la app para que los datos de salud nunca nos lleguen, y en esta política te explicamos cómo se protegen en el teléfono.
+    <span class="dc">[POR CONFIRMAR con un profesional]</span>
+  </p>
+
+  <h2>3. Los datos que introduces en la app</h2>
+
+  <h3>3.1 País</h3>
+  <p>
+    En el primer inicio eliges tu <strong>país</strong>. Sirve solo para mostrarte los campos adecuados y el número de emergencias del país: para Italia, por ejemplo, código fiscal, tarjeta sanitaria, autoridad sanitaria local (ASL), exenciones del copago y referencias a la historia clínica electrónica italiana (FSE); para los demás países, campos genéricos. La elección se queda en el teléfono, puedes cambiarla en los ajustes y no se envía a nadie. El país y el idioma usado para leer el texto de las fotos se guardan en las preferencias de la app, en el teléfono; la lista de números de emergencia está incluida en la app. Si eliges un país distinto de Italia, el código fiscal y las exenciones ya introducidos siguen guardados pero no se muestran.
+  </p>
+
+  <h3>3.2 Qué puedes guardar</h3>
+  <p>Para cada perfil puedes guardar, si quieres, esta información. Casi todos los campos son opcionales.</p>
+  <ul>
+    <li><strong>perfil</strong>: nombre, fecha de nacimiento, si es menor, foto, sexo, idioma hablado, progenitor o tutor de referencia;</li>
+    <li><strong>datos administrativos</strong>: en Italia código fiscal, número y caducidad de la tarjeta sanitaria, ASL o Región; en otros países los campos genéricos previstos por la app (ver punto 3.3);</li>
+    <li><strong>exenciones del copago</strong> (solo Italia): código tal como figura en el documento, descripción, caducidad;</li>
+    <li><strong>contactos</strong>: médico de cabecera o pediatra, farmacia, especialistas, contacto de emergencia con la relación (por ejemplo «hija»);</li>
+    <li><strong>alergias e intolerancias</strong>, con la reacción descrita por ti;</li>
+    <li><strong>afecciones</strong>: enfermedades actuales o pasadas, incluidas discapacidades, órganos ausentes y trasplantes;</li>
+    <li><strong>medicamentos</strong>: nombre, horas de los recordatorios que eliges tú, notas libres y el registro de tomas («tomada» u «omitida»);</li>
+    <li><strong>grupo sanguíneo</strong>, con el informe del que lo has tomado, si lo hay;</li>
+    <li><strong>vacunas</strong>, con fecha y certificado adjunto;</li>
+    <li><strong>intervenciones e ingresos</strong>, con el informe de alta si lo hay;</li>
+    <li><strong>dispositivos e implantes</strong> (por ejemplo marcapasos, prótesis, audífono);</li>
+    <li><strong>visitas y pruebas</strong>, con informes, fotos y documentos adjuntos y las preguntas para el médico;</li>
+    <li><strong>«Campos propios»</strong>: campos que creas tú, con el nombre y el contenido que quieras. Para cada uno eliges si mostrarlo en la ficha para el médico o en la ficha de emergencia; por defecto no aparece en ninguna. Los «Campos propios» aparecen siempre en el PDF completo del perfil y en el CSV, y nunca en las notificaciones.</li>
+  </ul>
+  <p>
+    En gran parte son <strong>datos relativos a la salud</strong>, que el RGPD considera categorías especiales de datos (art. 4, punto 15, y art. 9). También lo que escribes en «Campos propios» puede serlo: decides tú qué escribir. Todo se queda <strong>solo en la memoria privada de la app</strong> en tu teléfono, en una base de datos cifrada; también los adjuntos están cifrados (detalles en el punto 12).
+  </p>
+  <p><strong>No se transmiten a nadie.</strong> No tenemos un servidor que los reciba, no podemos leerlos y no podemos recuperarlos si los pierdes.</p>
+
+  <h3>3.3 Código fiscal, tarjeta sanitaria y números de identificación</h3>
+  <p>
+    Son opcionales. En la app están <strong>ocultos por completo</strong>: solo los ves en el formulario de edición del perfil, tocando el icono del ojo, y no aparecen en otras pantallas. <strong>No se incluyen en los PDF y CSV</strong> que exportas, salvo que lo elijas al exportar. Nunca aparecen en la ficha de emergencia ni en las notificaciones y nunca se usan para activar Premium. En cambio, sí se incluyen en la <strong>copia de seguridad cifrada</strong> (punto 3.10), que sirve para restaurar todos tus datos. Lo mismo vale para el campo de identificación genérico usado fuera de Italia.
+  </p>
+
+  <h3>3.4 Fotos y documentos</h3>
+  <p>
+    Puedes adjuntar fotos, PDF y otros documentos eligiéndolos con el selector de archivos o de fotos de Android, que entrega a la app solo el archivo que eliges. Para hacer una foto la app abre la aplicación de cámara del teléfono, que le devuelve solo la foto hecha: <strong>SaluteInOrdine no pide el permiso de cámara</strong> ni acceso a la memoria del teléfono. Los archivos se <strong>copian en la memoria privada de la app, cifrados</strong>, con nombres neutros; no salen del teléfono salvo que tú los exportes o compartas.
+  </p>
+
+  <h3>3.5 Lectura del texto de fotos</h3>
+  <p>
+    Si quieres, la app puede leer el texto de un informe o certificado fotografiado para <strong>rellenar</strong> los campos. El texto leído siempre se te muestra: <strong>lo revisas y lo confirmas tú</strong> antes de guardarlo. La app no interpreta el contenido, no extrae valores ni los valora. La lectura puede equivocarse.
+  </p>
+  <p>
+    La lectura usa <strong>Tesseract</strong>, un motor de reconocimiento de texto de código abierto que funciona <strong>totalmente en el teléfono</strong>. La foto y el texto leído <strong>no se envían a nadie</strong>, ni a nosotros ni a terceros, y la lectura no envía datos técnicos a ningún servicio externo.</p>
+  <p>
+    Los modelos de idioma de Tesseract (italiano, inglés, español, francés, alemán y portugués) están <strong>incluidos en la app</strong>: no se descargan de internet. Al primer uso se copian en la memoria privada de la app, excluida de las copias de seguridad. Durante la lectura la app no usa la red. Las licencias de los componentes (tesseract_ocr, BSD-3-Clause; Tesseract4Android, Apache-2.0) están en Información › Licencias.
+  </p>
+
+  <h3>3.6 Recordatorios y notificaciones</h3>
+  <p>
+    Los recordatorios de medicamentos, visitas, vacunas y caducidades (por ejemplo tarjeta o exención) los configuras tú: día, hora y texto. La app no sugiere horas ni cantidades. Las notificaciones las programa y muestra el teléfono: <strong>no pasan por ningún servidor</strong>, ni nuestro ni de Google.
+  </p>
+  <p>
+    Para no mostrar datos de salud a quien mire tu teléfono, por defecto las notificaciones solo dicen <strong>«SaluteInOrdine – Tienes un recordatorio»</strong>. En los ajustes puedes elegir mostrar también el nombre del medicamento (también para la renovación de la receta), de la visita o de la vacuna; para las exenciones solo aparece «Exención a punto de caducar», sin el código; el nombre del perfil, el código fiscal y las afecciones nunca aparecen. Las notificaciones están marcadas como <strong>privadas</strong>: en la pantalla de bloqueo Android puede ocultar su contenido, según los ajustes de tu teléfono.
+  </p>
+  <p>El registro «tomada» u «omitida» es un diario que rellenas tú: la app no cambia horas ni recordatorios según lo que registras.</p>
+
+  <h3>3.7 Ficha de emergencia y ficha para el médico</h3>
+  <p>
+    Con los datos que has introducido, la app compone una <strong>ficha de emergencia</strong> (por ejemplo grupo sanguíneo, alergias, afecciones importantes, medicamentos marcados, dispositivos, contacto de emergencia, médico, «Campos propios» que has elegido mostrar) y una <strong>ficha para el médico</strong> más completa. Las ves en la app; con Premium puedes guardarlas en PDF.
+  </p>
+  <div class="attenzione">
+    <strong>Quien ve la ficha, o el PDF, lee los datos que contiene.</strong> Eliges tú qué información incluir. Un PDF impreso o guardado en otra app ya no está protegido por el bloqueo de SaluteInOrdine.
+  </div>
+  <p>
+    SaluteInOrdine no muestra datos de salud en la pantalla de bloqueo del teléfono. La app puede explicarte cómo copiar algunos datos en la <strong>información de emergencia de Android</strong>: es una función de Android, no nuestra. Google advierte que cualquiera que coja tu teléfono puede ver esa información aunque el teléfono esté bloqueado, y que puedes desactivarla desde la app Seguridad Personal (<a href="https://support.google.com/android/answer/9319337" target="_blank" rel="noopener">guía de Google</a>).
+  </p>
+
+  <h3>3.8 «Pedir ayuda»</h3>
+  <p>
+    «Pedir ayuda» es un botón para llamar rápidamente a las personas que eliges tú: por ejemplo un familiar, el médico o el número de emergencias de tu país. Al principio la app te pide introducir estos números como primer paso, y te lo recuerda hasta que lo haces.
+  </p>
+  <ul>
+    <li><strong>Los números y el orden los decides tú.</strong> Puedes poner primero a un familiar que vive cerca y después el número de emergencias, o al revés.</li>
+    <li><strong>Números y nombres se quedan solo en el teléfono</strong>, en la base de datos cifrada de la app. No los enviamos a nadie ni los recibimos. Puedes escribir los números o elegirlos con el selector de contactos de Android: la app recibe solo el nombre y el número del contacto que eliges y no tiene permiso para leer tu agenda.</li>
+    <li><strong>Aviso de 5 segundos.</strong> Al tocar «Pedir ayuda», la app muestra durante 5 segundos a quién va a llamar, con el botón <strong>Cancelar</strong>; después la llamada sale sola.</li>
+    <li><strong>Permiso de llamadas.</strong> Para que la llamada salga sola, la app necesita el permiso de Android «Teléfono – hacer y gestionar llamadas» (CALL_PHONE). Te lo pide una sola vez, tras una explicación, cuando guardas la primera persona. Si no lo concedes, la app abre el teclado del teléfono con el número ya escrito y la llamada la inicias tú.</li>
+    <li><strong>Números de emergencia.</strong> Android no permite a las apps iniciar por sí solas una llamada a los números de emergencia (por ejemplo el 112): para estos números la app abre el teclado con el número ya escrito y tú tocas el botón de llamada.</li>
+    <li><strong>Llamar al siguiente.</strong> Tras una llamada puedes pasar a la siguiente persona de la lista, con un nuevo aviso de 5 segundos. Si la lista está vacía, «Pedir ayuda» propone el número de emergencias del país que has elegido.</li>
+    <li><strong>Siempre accesible, también sin PIN.</strong> «Pedir ayuda» se abre por encima de la pantalla del PIN y desde el menú que aparece al mantener pulsado el icono de la app. Es intencionado: en una emergencia el botón no debe estar bloqueado. Esto significa, sin embargo, que <strong>quien tenga en la mano tu teléfono, aunque la app esté bloqueada, puede ver los nombres de tus contactos de ayuda e iniciar una llamada</strong>. Con la app bloqueada solo se ven los nombres y el número de emergencias del país, no los demás números; el resto de los datos sigue protegido por el PIN. Solo tú puedes iniciar «Pedir ayuda», desde la app o desde el menú del icono: las demás apps instaladas en el teléfono no pueden iniciar la llamada a través de SaluteInOrdine. <span class="dc">[POR CONFIRMAR: cambio del desarrollador en curso]</span></li>
+    <li><strong>La llamada es una llamada normal</strong>, gestionada por tu teléfono y tu operador, con el coste de tu tarifa. Quien la recibe ve tu número de teléfono, como en cualquier llamada (salvo que hayas ocultado tu número en los ajustes del teléfono). SaluteInOrdine no graba la llamada, no envía SMS, no envía tu ubicación ni datos de salud y no guarda una lista de las llamadas hechas.</li>
+    <li><strong>Sin detección de caídas.</strong> La app no detecta caídas ni indisposiciones y no llama a nadie por sí sola: la llamada sale solo si tocas tú el botón.</li>
+  </ul>
+  <p>La app también puede explicarte cómo activar la función SOS de emergencia de Android: es una función de Android, no nuestra, y sigue las reglas de Android y del fabricante del teléfono.</p>
+  <div class="attenzione">
+    <strong>«Pedir ayuda» no es un servicio de emergencias</strong> y no garantiza que alguien conteste: la llamada puede no salir, por ejemplo sin cobertura, sin saldo o con el teléfono apagado. <strong>En caso de emergencia llama al 112</strong> o al número de emergencias de tu país.
+  </div>
+  <p>
+    Los números que introduces son datos de otras personas (familiares, médico): introdúcelos solo si están de acuerdo en que se les llame en caso de necesidad.
+  </p>
+
+  <h3>3.9 Exportación y compartir (Premium)</h3>
+  <p>
+    Con Premium puedes exportar los datos en <strong>PDF</strong> o <strong>CSV</strong>. El archivo se crea en el teléfono y luego lo guardas o lo compartes tú, con la app que elijas (correo, WhatsApp, Drive, impresión). <strong>El archivo no pasa por nuestros servidores.</strong>
+  </p>
+  <p>
+    Los archivos PDF y CSV <strong>no están cifrados ni tienen contraseña</strong>. El código fiscal y el número de tarjeta sanitaria solo se incluyen si marcas la casilla al exportar. Una vez fuera de la app, los trata quien los recibe o el servicio donde los guardas, según sus reglas. Compártelos solo con personas de confianza, por ejemplo tu médico. La app no ofrece accesos compartidos: la única forma de enseñar los datos a alguien es un archivo que creas tú.
+  </p>
+
+  <h3>3.10 Copia de seguridad cifrada</h3>
+  <p>
+    Desde los ajustes puedes crear un <strong>archivo de copia de seguridad cifrado</strong> con una contraseña que eliges tú. La contraseña no se guarda ni se comunica a nadie. El archivo se cifra con AES-256-GCM; la clave se deriva de la contraseña con PBKDF2-HMAC-SHA256 (600.000 iteraciones). Tú decides dónde guardarlo. No lo recibimos y no podemos abrirlo.</p>
+  <p>La copia contiene <strong>todos los datos de todos los perfiles</strong>, incluidos código fiscal, tarjeta sanitaria, «Campos propios», los números de «Pedir ayuda» y todos los adjuntos (fotos y documentos). No contiene la licencia Premium, el PIN ni los ajustes de la app. La <strong>restauración sustituye</strong> los datos del teléfono por los de la copia. Si restauras una copia hecha con una versión anterior de la app, sin «Pedir ayuda», los números de ayuda ya presentes en el teléfono se mantienen.
+  </p>
+  <div class="attenzione">
+    <strong>Si olvidas la contraseña, la copia no se puede abrir, ni siquiera nosotros.</strong>
+  </div>
+  <p>
+    Para mantener los datos de salud fuera de la nube, la app <strong>excluye sus datos de la copia de seguridad automática de Android</strong> en Google Drive y de la transferencia de teléfono a teléfono: ningún dato de SaluteInOrdine acaba en la copia de tu cuenta de Google. Si cambias de teléfono, llevas los datos con tu archivo de copia de seguridad.
+  </p>
+
+  <h3>3.11 Datos de familiares y menores</h3>
+  <p>
+    Puedes crear perfiles para otras personas, por ejemplo tus hijos o un padre o madre mayor al que cuidas. Son datos de salud de <strong>otras personas</strong>: introdúcelos solo si te ocupas tú de su salud.
+  </p>
+  <ul>
+    <li><strong>Menores</strong>: sus perfiles los crea y gestiona un progenitor o tutor, en su propio teléfono. La app no pide a los menores que se registren y no recoge datos de ellos.</li>
+    <li><strong>Otros adultos</strong>: te recomendamos hacerlo con su acuerdo y enseñarles lo que has guardado. Si te lo piden, corrige o borra sus datos.</li>
+    <li>Los datos de los familiares, como los tuyos, se quedan solo en tu teléfono y nunca se usan para activar Premium.</li>
+  </ul>
+
+  <h3>3.12 Bloqueo de la app</h3>
+  <p>
+    En el primer inicio la app te propone protegerla con un <strong>PIN</strong> (de 4 a 8 cifras) y, si quieres, con la huella o el rostro reconocidos por el teléfono. No es obligatorio. El PIN no se guarda en claro: la app conserva solo un hash (PBKDF2). El reconocimiento de huella o rostro lo hace Android: la app recibe solo el resultado.</p>
+  <p>El PIN <strong>protege el acceso a la app, no cifra los datos</strong>: el cifrado de la base de datos y de los adjuntos está siempre activo, con claves custodiadas por el teléfono (punto 12), aunque no configures el PIN. Cuando la app pasa a segundo plano se bloquea tras el tiempo que eliges (por defecto 1 minuto; puedes elegir «inmediatamente» o 5 minutos). «Pedir ayuda» sigue accesible aunque la app esté bloqueada (punto 3.8).</p>
+  <p>Si olvidas el PIN no podemos recuperarlo: puedes desbloquear con huella o rostro, si los has activado, o usar «Borrar todos los datos» y restaurar una copia.</p>
+  <p>Por defecto la app <strong>impide las capturas de pantalla</strong> y oculta su contenido en la lista de apps recientes en todas las pantallas. Puedes desactivar esta protección en los ajustes.
+  </p>
+
+  <h2>4. Activación de Premium en el teléfono</h2>
+  <p>La clave Premium vale como máximo en <strong>2 teléfonos</strong>. Para hacer respetar este límite, cuando activas la clave la app se conecta a nuestro servidor de licencias (<code>licenze.hubertmontero8514.workers.dev</code>, un servicio Cloudflare Workers gestionado por nosotros) y envía:</p>
+  <ul>
+    <li>el nombre de la app (<code>saluteinordine</code>);</li>
+    <li>la <strong>clave de licencia</strong>, que contiene la dirección de correo del comprador, el plan y la fecha de caducidad;</li>
+    <li>una <strong>huella del teléfono</strong>: un código obtenido con una función hash (SHA-256) a partir del nombre de la app y del identificador Android del teléfono (ANDROID_ID), acortado a 22 caracteres. <strong>El identificador Android nunca se envía en claro</strong> y la huella es distinta para cada app, así que no sirve para relacionar tu uso de apps diferentes.</li>
+  </ul>
+  <p><strong>Estas solicitudes no contienen datos de los perfiles, de salud ni de «Pedir ayuda».</strong> La misma solicitud se repite automáticamente cuando la activación está a punto de caducar (menos de 20 días) y solo si el teléfono está conectado; también se hace al tocar <strong>Desactivar en este teléfono</strong>. No hay otras solicitudes al servidor de licencias. El servidor responde con una activación firmada que la app verifica en el teléfono, incluso sin conexión.</p>
+  <p>El servidor de licencias <strong>no conserva tu correo</strong> ni la clave en claro. Conserva solo: el hash SHA-256 de la clave; la huella del teléfono; el tipo de plan; la fecha de activación y la de la última renovación; si cambias de teléfono, la fecha de la última sustitución automática (una cada 30 días); si una clave se bloquea (por ejemplo tras un reembolso o un abuso), el hash de esa clave. El botón <strong>Desactivar en este teléfono</strong>, en la pantalla Premium, borra del servidor la fila que vincula la clave a ese teléfono.</p>
+  <p>El identificador Android se lee solo para activar Premium, nunca para publicidad, estadísticas o elaboración de perfiles.</p>
+
+  <h2>5. Actualizaciones de la app</h2>
+  <p>Al iniciarse, la app pregunta a <code>marketplace-apps.com/api/versione/saluteinordine</code> cuál es la última versión y, si hay una nueva, descarga el paquete de <code>files.marketplace-apps.com</code> (Cloudflare R2). Tú confirmas la instalación. Estas solicitudes no contienen datos de salud ni identificadores del teléfono o de la licencia.</p>
+  <p>Como cualquier servidor, los proveedores de infraestructura (Cloudflare para el servidor de licencias y los archivos, Vercel para el sitio) registran datos técnicos de las solicitudes, como dirección IP, tipo de cliente (User-Agent) y hora. <span class="dc">[POR CONFIRMAR: plazos de conservación de estos registros]</span></p>
+
+  <h2>6. Compra y pago</h2>
+  <p>
+    SaluteInOrdine se descarga gratis y el plan Free sigue siendo gratuito. Premium se compra solo en <a href="https://marketplace-apps.com">marketplace-apps.com</a>, con un <strong>pago único</strong>, sin suscripción y sin renovación automática:
+  </p>
+  <div class="tab">
+  <table>
+    <tr><th>Plan Premium</th><th>Duración</th><th>Precio</th></tr>
+    <tr><td>30 días</td><td>30 días</td><td>2,49 €</td></tr>
+    <tr><td>1 año</td><td>1 año</td><td>9,99 €</td></tr>
+    <tr><td>Completo</td><td>3 años</td><td>24,99 €</td></tr>
+  </table>
+  </div>
+  <p>Los planes de 30 días y de 1 año están disponibles ya; el plan Completo está disponible desde el 01/12/2026. Las posibles ofertas temporales se indican en el marketplace.</p>
+  <p>
+    Cuando tocas «Ir al pago» se abre el navegador en una página de PayPal: los datos de pago se los das a PayPal, no a nosotros, y <strong>nunca vemos los datos de tu tarjeta o de tu cuenta</strong>. PayPal los trata como responsable del tratamiento según su propia <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">declaración de privacidad</a>. <span class="dc">[POR CONFIRMAR con un profesional]</span>
+  </p>
+  <p>Tras el pago recibes por correo la clave de activación. Usamos el correo solo para enviarte la clave y el recibo, para un eventual desistimiento y para la asistencia. La compra no requiere ni recibe ningún dato de salud.</p>
+
+  <h2>7. Permisos de Android</h2>
+  <p>La app declara solo estos permisos:</p>
+  <div class="tab">
+  <table>
+    <tr><th>Permiso</th><th>Para qué sirve</th></tr>
+    <tr><td>Internet</td><td>Solo activación de Premium y actualizaciones (puntos 4 y 5). Nunca para los datos de salud.</td></tr>
+    <tr><td>Notificaciones</td><td>Mostrar los recordatorios que configuras. En Android 13 y posteriores te lo pide el teléfono.</td></tr>
+    <tr><td>Alarmas y recordatorios exactos</td><td>Que el recordatorio del medicamento llegue a la hora exacta elegida. Si no lo concedes, los recordatorios llegan igualmente, pero pueden retrasarse unos minutos.</td></tr>
+    <tr><td>Inicio tras reiniciar el teléfono</td><td>Volver a programar los recordatorios tras reiniciar el teléfono o actualizar la app.</td></tr>
+    <tr><td>Biometría</td><td>Desbloquear la app con huella o rostro, si lo activas. El dato biométrico se queda en Android y la app no lo recibe.</td></tr>
+    <tr><td>Teléfono – hacer llamadas (CALL_PHONE)</td><td>Iniciar sola, tras el aviso de 5 segundos, la llamada de «Pedir ayuda» a los números elegidos (punto 3.8). La app lo pide una sola vez, tras una explicación, cuando guardas la primera persona; si no lo concedes, se abre el teclado y llamas tú. No sirve para leer llamadas, contactos ni el número del teléfono. En los dispositivos sin función de teléfono (por ejemplo algunas tabletas) se abre el teclado, si lo hay.</td></tr>
+    <tr><td>Instalación de actualizaciones</td><td>Proponerte instalar la nueva versión descargada; Android siempre te pide confirmación.</td></tr>
+  </table>
+  </div>
+  <p>
+    Algunas bibliotecas usadas por la app pueden añadir permisos técnicos que no dan acceso a tus datos personales (por ejemplo para que vibre la notificación). <span class="dc">[POR CONFIRMAR en el APK final con aapt]</span>
+  </p>
+  <p>La app <strong>no pide</strong> permisos de cámara, acceso a la memoria o a las fotos, ubicación, contactos, estado del teléfono, registro de llamadas, micrófono, mensajes ni el identificador de publicidad: están excluidos de forma explícita. Fotos y documentos se eligen con el selector de Android y las fotos se hacen con la app de cámara del teléfono (punto 3.4).</p>
+
+  <h2>8. Lo que la app NO hace</h2>
+  <ul>
+    <li>no envía los datos de salud, de los perfiles, los «Campos propios» ni los números de «Pedir ayuda» a ningún servidor;</li>
+    <li>no usa inteligencia artificial sobre tus datos;</li>
+    <li>no recoge estadísticas de uso ni usa herramientas de análisis, informes automáticos de errores o publicidad;</li>
+    <li>no tiene cuentas, accesos compartidos ni sincronización;</li>
+    <li>no se conecta a historias clínicas electrónicas, autoridades sanitarias, tu médico ni otros servicios sanitarios;</li>
+    <li>no calcula ni sugiere dosis, no comprueba interacciones entre medicamentos, no da alarmas sobre valores y no interpreta informes;</li>
+    <li>no detecta caídas ni indisposiciones, no llama a nadie por sí sola y no envía tu ubicación;</li>
+    <li>no elabora perfiles ni toma decisiones automatizadas que te afecten.</li>
+  </ul>
+
+  <h2>9. Base jurídica, conservación y destinatarios de los datos que tratamos nosotros</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalidad</th><th>Datos</th><th>Base jurídica</th><th>Plazo</th></tr>
+    <tr><td>Venta de la clave, envío por correo tras el pago, recibo y eventual desistimiento</td><td>Correo, datos de la transacción</td><td>Contrato (art. 6, apdo. 1, letra b, RGPD) y obligaciones legales fiscales y civiles (art. 6, apdo. 1, letra c)</td><td>10 años desde la compra <span class="dc">[POR CONFIRMAR]</span></td></tr>
+    <tr><td>Activación de Premium y límite de teléfonos por clave</td><td>Hash de la clave, huella del teléfono, plan, fechas</td><td>Contrato de licencia (art. 6, apdo. 1, letra b)</td><td>Mientras la licencia esté en uso; de inmediato con «Desactivar en este teléfono», o tras 90 días sin renovación</td></tr>
+    <tr><td>Prevención de abusos de las licencias (cambio de teléfono cada 30 días, claves bloqueadas, posible prueba una vez por teléfono)</td><td>Solo hashes y fechas</td><td>Interés legítimo (art. 6, apdo. 1, letra f) en prevenir usos fraudulentos; puedes oponerte (punto 10)</td><td>Último cambio de teléfono: 60 días. Pruebas: 12 meses. Claves bloqueadas: mientras sea necesario</td></tr>
+    <tr><td>Comprobación y descarga de actualizaciones; funcionamiento y seguridad de los servidores</td><td>Dirección IP, tipo de cliente (User-Agent), hora, versión solicitada</td><td>Interés legítimo (art. 6, apdo. 1, letra f) en mantener la app y los servidores seguros y operativos</td><td>Registros técnicos de los proveedores <span class="dc">[POR CONFIRMAR]</span></td></tr>
+  </table>
+  </div>
+  <p>No tratamos tus datos con fines de marketing, elaboración de perfiles ni decisiones automatizadas. Los datos de salud se quedan en el teléfono hasta que los borras o desinstalas la app; los archivos que exportas se quedan donde los guardaste.</p>
+
+  <h3>Proveedores</h3>
+  <p>Utilizamos estos proveedores, que tratan los datos por cuenta nuestra como encargados del tratamiento (art. 28 RGPD), salvo donde se indique:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Estados Unidos): servidor de licencias (Workers), base de datos de activaciones (D1), archivos de actualización (R2);</li>
+    <li><strong>Vercel</strong> (Estados Unidos): alojamiento del sitio marketplace-apps.com (página de compra, comprobación de versión);</li>
+    <li><strong>Resend</strong> (Estados Unidos): envío del correo con la clave;</li>
+    <li><strong>PayPal</strong>: pago, como responsable del tratamiento según su propia declaración (punto 6).</li>
+  </ul>
+  <p>
+    Algunos proveedores tienen sede en Estados Unidos o usan infraestructuras en varios países, por lo que los datos de compra y licencia pueden tratarse fuera de la Unión Europea. La transferencia se basa en la decisión de adecuación de la Comisión Europea para las empresas adheridas al Marco de Privacidad de Datos UE-EE. UU. (Decisión de Ejecución (UE) 2023/1795 de 10 de julio de 2023, art. 45 RGPD) o en las cláusulas contractuales tipo aprobadas por la Comisión (art. 46 RGPD), según indique cada proveedor.
+  </p>
+  <p><strong>Ningún proveedor recibe datos de salud.</strong> En la lectura del texto de fotos y en «Pedir ayuda» no interviene ningún proveedor nuestro. No vendemos ni cedemos tus datos a nadie.</p>
+
+  <h2>10. Tus derechos</h2>
+  <p>El RGPD te reconoce el derecho de acceder a tus datos, rectificarlos, suprimirlos, limitar su tratamiento, oponerte y recibirlos en un formato estructurado y legible (arts. 15-21).</p>
+  <div class="tab">
+  <table>
+    <tr><th>Datos</th><th>Cómo ejercer tus derechos</th></tr>
+    <tr><td>Datos de los perfiles, «Campos propios» y números de «Pedir ayuda» (en el teléfono)</td><td>Directamente en la app: los ves todos, los modificas o los borras cuando quieras. «Borrar perfil» elimina un perfil con todos sus datos y adjuntos. «Borrar todos los datos», en los ajustes, elimina la base de datos (incluidos «Campos propios» y números de «Pedir ayuda»), los adjuntos, los archivos temporales, los recordatorios programados, las claves de cifrado custodiadas por el teléfono y los ajustes. El acceso directo «Pedir ayuda» del icono forma parte de la app y se mantiene, pero sin números solo propone el número de emergencias. La licencia Premium, que no es un dato de salud, por defecto se queda en el teléfono; si marcas la casilla, la app la quita y libera el puesto en el servidor de licencias (requiere internet). Desinstalar la app también lo borra todo. Las copias y los archivos exportados guardados en otro sitio no se tocan: los borras tú. Nosotros no tenemos estos datos, así que no podemos mostrártelos ni borrarlos.</td></tr>
+    <tr><td>Datos de compra y licencia</td><td>Escríbenos a la dirección del punto 1. Como no guardamos tu correo en claro en el servidor de licencias, para encontrar tus datos podríamos pedirte la clave de licencia. Para la licencia también puedes usar «Desactivar en este teléfono».</td></tr>
+    <tr><td>Oposición (art. 21)</td><td>Escríbenos sobre los tratamientos basados en el interés legítimo (punto 9).</td></tr>
+    <tr><td>Reclamación</td><td>Autoridad italiana de protección de datos, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), o la autoridad del país donde resides.</td></tr>
+  </table>
+  </div>
+  <p>Respondemos sin dilación indebida y a más tardar en el plazo de un mes desde la solicitud, como prevé el art. 12, apdo. 3, RGPD.</p>
+
+  <h2>11. Si vives fuera de la Unión Europea</h2>
+  <p>
+    SaluteInOrdine se puede usar en todo el mundo. Estamos establecidos en Italia: para los datos que tratamos nosotros (compra, licencia, actualizaciones) aplicamos el RGPD a todos los usuarios, vivan donde vivan (art. 3, apdo. 1, RGPD), y los derechos del punto 10 también valen para ti.
+  </p>
+  <p>
+    En tu país pueden existir leyes que te den derechos adicionales, también sobre los datos de salud (por ejemplo, en Estados Unidos, algunas leyes estatales sobre los datos de salud de los consumidores). Esta política está redactada con base en el derecho de la Unión Europea e italiano: <strong>no hemos verificado el cumplimiento de las leyes de cada país</strong>. Recuerda que tus datos de salud se quedan solo en tu teléfono y no los recibimos. Para cualquier solicitud, escríbenos (punto 1).
+    <span class="dc">[POR VERIFICAR con un profesional]</span>
+  </p>
+
+  <h2>12. Seguridad</h2>
+  <ul>
+    <li><strong>Base de datos cifrada</strong>: los datos de los perfiles, los «Campos propios» y los números de «Pedir ayuda» están en una base de datos SQLite cifrada con ChaCha20-Poly1305 (SQLite3MultipleCiphers). La clave es una secuencia aleatoria de 32 bytes generada en el teléfono y protegida con el Android Keystore. Los datos borrados se sobrescriben en la base de datos (secure delete).</li>
+    <li><strong>Adjuntos cifrados</strong>: fotos y documentos se cifran con AES-256-GCM, con una clave aparte protegida con el Android Keystore, y se guardan con nombres neutros.</li>
+    <li><strong>Copia de seguridad cifrada</strong>: AES-256-GCM con clave derivada de tu contraseña (punto 3.10).</li>
+    <li><strong>Bloqueo de la app</strong> con PIN o biometría y <strong>protección contra capturas de pantalla</strong> activa por defecto (punto 3.12).</li>
+    <li><strong>Sin copia automática</strong> de los datos en Google y sin transferencia automática de teléfono a teléfono (punto 3.10).</li>
+    <li>Las comunicaciones con el servidor de licencias y para las actualizaciones usan HTTPS.</li>
+  </ul>
+  <p>
+    Ninguna medida es infalible: quien conozca el PIN o desbloquee el teléfono puede ver los datos en la app, y cualquiera que tenga el teléfono puede usar «Pedir ayuda». Te recomendamos mantener activo el bloqueo de pantalla, actualizar el sistema operativo y <strong>hacer copias periódicas</strong>: si pierdes o formateas el teléfono sin una copia, los datos no se pueden recuperar.
+  </p>
+
+  <h2>13. La app no sustituye al médico, a la historia clínica electrónica ni a los servicios de emergencias</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">SaluteInOrdine es <strong>un archivo y una agenda</strong> de los datos de salud que introduces tú. No hace diagnósticos, no da consejos médicos, no calcula ni sugiere dosis, no comprueba interacciones entre medicamentos, no señala valores anómalos y no interpreta informes.</p>
+    <p>Los datos los introduces tú: la app no comprueba que estén completos o sean correctos. No es una historia clínica electrónica ni un servicio sanitario de tu país y no los sustituye; para los documentos oficiales vale lo emitido por los centros sanitarios.</p>
+    <p style="margin-bottom:0">«Pedir ayuda» no es un servicio de emergencias. Para cualquier duda sobre la salud, consulta a tu médico o farmacéutico. <strong>En caso de emergencia llama al 112</strong> o al número de emergencias de tu país.</p>
+  </div>
+
+  <h2>14. Menores</h2>
+  <p>La app está destinada a personas mayores de edad. Los perfiles de menores solo pueden crearlos y gestionarlos un progenitor o tutor, como se describe en el punto 3.11.</p>
+
+  <h2>15. Distribución</h2>
+  <p>
+    SaluteInOrdine se distribuye solo a través de <a href="https://marketplace-apps.com">marketplace-apps.com</a>, no a través de Google Play; el APK está firmado digitalmente. Android puede mostrar un aviso durante la instalación: es normal para las apps instaladas fuera de Play Store.
+  </p>
+
+  <h2>16. Cambios en esta política</h2>
+  <p>Si cambiamos la política de forma sustancial, te lo mostraremos al abrir la app. Si algún día la app tuviera que enviar datos de salud fuera del teléfono, no lo hará sin avisarte antes y sin tu elección explícita. La fecha de arriba indica la última actualización.</p>
+
+  <h2>17. Idiomas</h2>
+  <p>Esta política está disponible en italiano, inglés, español, francés, alemán y portugués. <strong>El texto de referencia es el italiano</strong>: si las versiones difieren, prevalece la versión italiana.</p>
+
+  <h2>18. Contacto</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a></p>
+
+  <footer>© 2026 Hubert Montero — SaluteInOrdine</footer>
+
+</div>
+</body>
+</html>

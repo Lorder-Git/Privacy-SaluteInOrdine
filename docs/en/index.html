@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex" />
 <title>Privacy policy — SaluteInOrdine</title>
 <link rel="alternate" hreflang="it" href="../" />
 <link rel="alternate" hreflang="en" href="./" />
@@ -11,10 +10,6 @@
 <link rel="alternate" hreflang="fr" href="../fr/" />
 <link rel="alternate" hreflang="de" href="../de/" />
 <link rel="alternate" hreflang="pt" href="../pt/" />
-<!--
-  Versione 1.0 del 18/11/2026. Testo di riferimento: docs/index.html (italiano);
-  traduzioni in en/ es/ fr/ de/ pt/. Il meta "noindex" si toglie quando l'app viene pubblicata.
--->
 <style>
   :root { --accent: #1d6fa5; --text: #1f2937; --muted: #6b7280; --bg: #ffffff; --panel: #f5f8fb; --border: #e5e7eb; }
   * { box-sizing: border-box; }
@@ -54,14 +49,14 @@
   </nav>
 
   <h1>Privacy policy — SaluteInOrdine</h1>
-  <div class="meta">Last updated: 18/11/2026 &nbsp;·&nbsp; Version: 1.0 (SaluteInOrdine app 1.0.0)</div>
+  <div class="meta">Last updated: November 21, 2026 &nbsp;·&nbsp; Version: 1.1 (SaluteInOrdine app 1.0.2)</div>
   <div class="rif">This is a translation. <strong>The reference text is the <a href="../">Italian version</a></strong>: if the versions differ, the Italian version prevails.</div>
 
   <div class="summary">
     <strong>In short.</strong>
     <ul>
       <li><strong>Your health data and your family's stay on your phone only.</strong> We do not send them to any server, neither to us nor to anyone else. We cannot see them and, if you lose them, we cannot recover them.</li>
-      <li>No sign-up and no account. No advertising, no usage statistics, no automatic crash reports, no artificial intelligence.</li>
+      <li>No sign-up and no account. No advertising, no usage statistics, no automatic crash reports, no artificial intelligence. The website only counts, as daily numbers with no identifiers, how often the apps check for updates and how many updates are downloaded (section 5).</li>
       <li>Reading text from photos happens <strong>entirely on the phone</strong>: photos and text go to no one (section 3.5).</li>
       <li>The <strong>"Call for help"</strong> button calls the numbers you choose, in the order you decide. The numbers stay on the phone. <strong>It is not an emergency service</strong>: in an emergency, call 112 or your country's emergency number (section 3.8).</li>
       <li>You can create several profiles (for example for your children or for a parent you care for). Profiles of minors are managed by a parent or guardian.</li>
@@ -84,7 +79,7 @@
   <table>
     <tr><th>Data</th><th>Where they are</th><th>Who processes them</th></tr>
     <tr><td>Health and personal data you enter in the profiles, your "My fields" and the "Call for help" numbers (section 3)</td><td>Only on your phone, in the app's private storage</td><td>You, for yourself and your family. We provide the app but do not receive these data and have no way to read them</td></tr>
-    <tr><td>Purchase, licence and update data (sections 4, 5 and 6)</td><td>On the servers of the marketplace and of the providers listed in section 9</td><td>Us, as data controller</td></tr>
+    <tr><td>Purchase, license and update data (sections 4, 5 and 6)</td><td>On the servers of the marketplace and of the providers listed in section 9</td><td>Us, as data controller</td></tr>
   </table>
   </div>
   <p>
@@ -137,7 +132,7 @@
   <p>
     Reading uses <strong>Tesseract</strong>, an open-source text recognition engine that works <strong>entirely on the phone</strong>. The photo and the text read <strong>are not sent to anyone</strong>, neither to us nor to third parties, and reading sends no technical data to any external service.</p>
   <p>
-    The Tesseract language models (Italian, English, Spanish, French, German and Portuguese) are <strong>bundled with the app</strong>: they are not downloaded from the internet. On first use they are copied into the app's private storage, which is excluded from backups. While reading, the app does not use the network. The component licences (tesseract_ocr, BSD-3-Clause; Tesseract4Android, Apache-2.0) are in Information › Licences.
+    The Tesseract language models (Italian, English, Spanish, French, German and Portuguese) are <strong>bundled with the app</strong>: they are not downloaded from the internet. On first use they are copied into the app's private storage, which is excluded from backups. While reading, the app does not use the network. The component licenses (tesseract_ocr, BSD-3-Clause; Tesseract4Android, Apache-2.0) are in Information › Licenses.
   </p>
 
   <h3>3.6 Reminders and notifications</h3>
@@ -194,7 +189,7 @@
   <h3>3.10 Encrypted backup</h3>
   <p>
     From the settings you can create an <strong>encrypted backup file</strong> with a password you choose. The password is not saved or communicated to anyone. The file is encrypted with AES-256-GCM; the key is derived from the password with PBKDF2-HMAC-SHA256 (600,000 iterations). You decide where to save it. We do not receive it and cannot open it.</p>
-  <p>The backup contains <strong>all data of all profiles</strong>, including tax code, health card, "My fields", the "Call for help" numbers and all attachments (photos and documents). It does not contain the Premium licence, the PIN or the app settings. <strong>Restoring replaces</strong> the data on the phone with those in the backup. If you restore a backup made with an earlier version of the app, without "Call for help", the help numbers already on the phone are kept.
+  <p>The backup contains <strong>all data of all profiles</strong>, including tax code, health card, "My fields", the "Call for help" numbers and all attachments (photos and documents). It does not contain the Premium license, the PIN or the app settings. <strong>Restoring replaces</strong> the data on the phone with those in the backup. If you restore a backup made with an earlier version of the app, without "Call for help", the help numbers already on the phone are kept.
   </p>
   <div class="attenzione">
     <strong>If you forget the password, the backup cannot be opened, not even by us.</strong>
@@ -215,26 +210,27 @@
 
   <h3>3.12 App lock</h3>
   <p>
-    At first launch the app offers to protect it with a <strong>PIN</strong> (4 to 8 digits) and, if you wish, with the fingerprint or face recognised by the phone. It is not mandatory. The PIN is not stored in clear: the app keeps only a hash of it (PBKDF2). Fingerprint or face recognition is done by Android: the app receives only the result.</p>
+    At first launch the app offers to protect it with a <strong>PIN</strong> (4 to 8 digits) and, if you wish, with the fingerprint or face recognized by the phone. It is not mandatory. The PIN is not stored in clear: the app keeps only a hash of it (PBKDF2). Fingerprint or face recognition is done by Android: the app receives only the result.</p>
   <p>The PIN <strong>protects access to the app, it does not encrypt the data</strong>: database and attachment encryption is always on, with keys kept by the phone (section 12), even if you do not set a PIN. When the app goes to the background it locks after the time you choose (1 minute by default; you can choose "immediately" or 5 minutes). "Call for help" remains reachable even when the app is locked (section 3.8).</p>
   <p>If you forget the PIN we cannot recover it: you can unlock with fingerprint or face, if enabled, or use "Delete all data" and restore a backup.</p>
   <p>By default the app <strong>blocks screenshots</strong> and hides its content in the recent apps list on all screens. You can turn this protection off in the settings.
   </p>
 
   <h2>4. Activating Premium on the phone</h2>
-  <p>A Premium key is valid on <strong>2 phones</strong> at most. To enforce this limit, when you activate the key the app connects to our licence server (<code>licenze.hubertmontero8514.workers.dev</code>, a Cloudflare Workers service run by us) and sends:</p>
+  <p>A Premium key is valid on <strong>2 phones</strong> at most. To enforce this limit, when you activate the key the app connects to our license server (<code>licenze.hubertmontero8514.workers.dev</code>, a Cloudflare Workers service run by us) and sends:</p>
   <ul>
     <li>the app name (<code>saluteinordine</code>);</li>
-    <li>the <strong>licence key</strong>, which contains the buyer's email address, the plan and the expiry date;</li>
+    <li>the <strong>license key</strong>, which contains the buyer's email address, the plan and the expiry date;</li>
     <li>a <strong>phone fingerprint</strong>: a code derived with a hash function (SHA-256) from the app name and the phone's Android identifier (ANDROID_ID), then shortened to 22 characters. <strong>The Android identifier is never sent in clear</strong> and the fingerprint is different for each app, so it cannot be used to link your use of different apps.</li>
   </ul>
-  <p><strong>These requests contain no profile, health or "Call for help" data.</strong> The same request is repeated automatically when the activation is about to expire (less than 20 days) and only if the phone is online; it is also made when you tap <strong>Deactivate on this phone</strong>. There are no other requests to the licence server. The server replies with a signed activation that the app checks on the phone, even offline.</p>
-  <p>The licence server <strong>does not store your email</strong> or the key in clear. It stores only: the SHA-256 hash of the key; the phone fingerprint; the plan type; the activation date and the last renewal date; if you change phone, the date of the last automatic replacement (one every 30 days); if a key is blocked (for example after a refund or abuse), the hash of that key. The <strong>Deactivate on this phone</strong> button, on the Premium screen, deletes from the server the row linking the key to that phone.</p>
+  <p><strong>These requests contain no profile, health or "Call for help" data.</strong> The same request is repeated automatically when the activation is about to expire (less than 20 days) and only if the phone is online; it is also made when you tap <strong>Deactivate on this phone</strong>. There are no other requests to the license server. The server replies with a signed activation that the app checks on the phone, even offline.</p>
+  <p>The license server <strong>does not store your email</strong> or the key in clear. It stores only: the SHA-256 hash of the key; the phone fingerprint; the plan type; the activation date and the last renewal date; if you change phone, the date of the last automatic replacement (one every 30 days); if a key is blocked (for example after a refund or abuse), the hash of that key. The <strong>Deactivate on this phone</strong> button, on the Premium screen, deletes from the server the row linking the key to that phone.</p>
   <p>The Android identifier is read only to activate Premium, never for advertising, statistics or profiling.</p>
 
   <h2>5. App updates</h2>
-  <p>At launch the app asks <code>marketplace-apps.com/api/versione/saluteinordine</code> for the latest version and, if there is a new one, downloads the package from <code>files.marketplace-apps.com</code> (Cloudflare R2). You confirm the installation. These requests contain no health data and no phone or licence identifiers.</p>
-  <p>Like any server, infrastructure providers (Cloudflare for the licence server and files, Vercel for the website) log technical request data, such as IP address, client type (User-Agent) and time. These logs are kept according to the providers' policies, described in their privacy statements (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
+  <p>At launch the app asks <code>marketplace-apps.com/api/versione/saluteinordine</code> for the latest version and, if there is a new one, downloads the package through <code>marketplace-apps.com/api/scarica/saluteinordine</code>, which immediately redirects to the file on <code>files.marketplace-apps.com</code> (Cloudflare R2). You confirm the installation. These requests contain no health data and no phone or license identifiers.</p>
+  <p>The website does not store the IP address or any other data from these requests: it only keeps daily numbers, namely how many times the apps asked for the version (these are app launches, not people) and how many updates were downloaded, per app and version. Nobody can be identified from these numbers. From the license server, too, we only derive overall numbers per app (activated phones, phones that connected in the last 30 days, activations and sales per day), without seeing fingerprints, keys or emails.</p>
+  <p>Like any server, infrastructure providers (Cloudflare for the license server and files, Vercel for the website, including the hand-off of update downloads) log technical request data, such as IP address, client type (User-Agent) and time. These logs are kept according to the providers' policies, described in their privacy statements (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a>, <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel</a>).</p>
 
   <h2>6. Purchase and payment</h2>
   <p>
@@ -248,7 +244,7 @@
     <tr><td>Complete</td><td>3 years</td><td>€24.99</td></tr>
   </table>
   </div>
-  <p>The 30-day and 1-year plans are available now; the Complete plan is available from 01/12/2026. Any temporary offers are shown on the marketplace.</p>
+  <p>The 30-day and 1-year plans are available now; the Complete plan is available from December 1, 2026. Any temporary offers are shown on the marketplace.</p>
   <p>
     When you tap "Go to payment" the browser opens a PayPal page: you give your payment data to PayPal, not to us, and <strong>we never see your card or account details</strong>. PayPal processes them under its own <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank" rel="noopener">privacy statement</a>, in which it describes itself as data controller.
   </p>
@@ -277,8 +273,8 @@
   <ul>
     <li>it does not send health data, profile data, "My fields" or "Call for help" numbers to any server;</li>
     <li>it does not use artificial intelligence on your data;</li>
-    <li>it does not collect usage statistics and uses no analytics, automatic crash reports or advertising;</li>
-    <li>it has no accounts, shared access or synchronisation;</li>
+    <li>it does not collect usage statistics and uses no analytics, automatic crash reports or advertising (the website only counts app launches and updates as anonymous daily numbers: section 5);</li>
+    <li>it has no accounts, shared access or synchronization;</li>
     <li>it does not connect to electronic health records, health authorities, your doctor or other health services;</li>
     <li>it does not calculate or suggest doses, does not check drug interactions, gives no alerts on values and does not interpret reports;</li>
     <li>it does not detect falls or illness, does not call anyone by itself and does not send your location;</li>
@@ -290,9 +286,9 @@
   <table>
     <tr><th>Purpose</th><th>Data</th><th>Legal basis</th><th>How long</th></tr>
     <tr><td>Selling the key, sending it by email after payment, receipt and any withdrawal</td><td>Email, transaction data</td><td>Contract (Art. 6(1)(b) GDPR) and legal tax and civil-law obligations (Art. 6(1)(c))</td><td>For the period required by tax and accounting obligations</td></tr>
-    <tr><td>Premium activation and limit of phones per key</td><td>Key hash, phone fingerprint, plan, dates</td><td>Licence contract (Art. 6(1)(b))</td><td>While the licence is in use; immediately with "Deactivate on this phone", or after 90 days without renewal</td></tr>
-    <tr><td>Preventing licence abuse (phone change every 30 days, blocked keys, possible one-time trial per phone)</td><td>Hashes and dates only</td><td>Legitimate interest (Art. 6(1)(f)) in preventing fraudulent use; you can object (section 10)</td><td>Last phone change: 60 days. Trials: 12 months. Blocked keys: as long as needed</td></tr>
-    <tr><td>Checking and downloading updates; operation and security of the servers</td><td>IP address, client type (User-Agent), time, requested version</td><td>Legitimate interest (Art. 6(1)(f)) in keeping the app and servers secure and working</td><td>According to the providers' policies (section 5)</td></tr>
+    <tr><td>Premium activation and limit of phones per key</td><td>Key hash, phone fingerprint, plan, dates</td><td>License contract (Art. 6(1)(b))</td><td>While the license is in use; immediately with "Deactivate on this phone", or after 90 days without renewal</td></tr>
+    <tr><td>Preventing license abuse (phone change every 30 days, blocked keys, possible one-time trial per phone)</td><td>Hashes and dates only</td><td>Legitimate interest (Art. 6(1)(f)) in preventing fraudulent use; you can object (section 10)</td><td>Last phone change: 60 days. Trials: 12 months. Blocked keys: as long as needed</td></tr>
+    <tr><td>Checking and downloading updates; operation and security of the servers</td><td>IP address, client type (User-Agent), time, requested version; the website derives only daily counts from them, with no identifiers</td><td>Legitimate interest (Art. 6(1)(f)) in keeping the app and servers secure and working</td><td>According to the providers' policies (section 5)</td></tr>
   </table>
   </div>
   <p>We do not process your data for marketing, profiling or automated decisions. Health data stay on the phone until you delete them or uninstall the app; files you export stay where you saved them.</p>
@@ -300,14 +296,14 @@
   <h3>Providers</h3>
   <p>We use these providers, which process data on our behalf as processors (Art. 28 GDPR), except where stated:</p>
   <ul>
-    <li><strong>Cloudflare</strong> (United States): licence server (Workers), activation database (D1), update files (R2);</li>
-    <li><strong>Vercel</strong> (United States): hosting of the marketplace-apps.com website (purchase page, version check);</li>
+    <li><strong>Cloudflare</strong> (United States): license server (Workers), activation database (D1), update files (R2);</li>
+    <li><strong>Vercel</strong> (United States): hosting of the marketplace-apps.com website (purchase page, version check, passing on update downloads);</li>
     <li><strong>Resend</strong> (United States): sending the email with the key;</li>
-    <li>the <strong>website's database hosting service</strong>: storing order data;</li>
+    <li><strong>Supabase</strong> (the marketplace-apps.com website's database, hosted in the European Union, in Ireland, eu-west-1 region; the website itself is hosted by Vercel): storing order data;</li>
     <li><strong>PayPal</strong>: payment, as data controller under its own privacy statement (section 6).</li>
   </ul>
   <p>
-    Some providers are based in the United States or use infrastructure in several countries, so purchase and licence data may be processed outside the European Union. The transfer is based on the European Commission's adequacy decision for companies participating in the EU-U.S. Data Privacy Framework (Commission Implementing Decision (EU) 2023/1795 of 10 July 2023, Art. 45 GDPR) or on the standard contractual clauses approved by the Commission (Art. 46 GDPR), as indicated by each provider.
+    Some providers are based in the United States or use infrastructure in several countries, so purchase and license data may be processed outside the European Union. The transfer is based on the European Commission's adequacy decision for companies participating in the EU-U.S. Data Privacy Framework (Commission Implementing Decision (EU) 2023/1795 of 10 July 2023, Art. 45 GDPR) or on the standard contractual clauses approved by the Commission (Art. 46 GDPR), as indicated by each provider.
   </p>
   <p><strong>No provider receives health data.</strong> None of our providers is involved in reading text from photos or in "Call for help". We do not sell or give your data to anyone.</p>
 
@@ -316,8 +312,8 @@
   <div class="tab">
   <table>
     <tr><th>Data</th><th>How to exercise your rights</th></tr>
-    <tr><td>Profile data, "My fields" and "Call for help" numbers (on the phone)</td><td>Directly in the app: you can see all of them, change them or delete them at any time. "Delete profile" deletes a profile with all its data and attachments. "Delete all data", in the settings, deletes the database (including "My fields" and "Call for help" numbers), attachments, temporary files, scheduled reminders, the encryption keys kept by the phone and the settings. The "Call for help" shortcut on the icon is part of the app and remains, but with no numbers it only offers the emergency number. The Premium licence, which is not health data, stays on the phone by default; if you tick the box the app removes it and frees the slot on the licence server (internet required). Uninstalling the app also deletes everything. Backups and exported files saved elsewhere are not affected: you delete them yourself. We do not have these data, so we cannot show them to you or delete them.</td></tr>
-    <tr><td>Purchase and licence data</td><td>Write to the address in section 1. Since we do not keep your email in clear on the licence server, we may ask you for the licence key to find your data. For the licence you can also use "Deactivate on this phone".</td></tr>
+    <tr><td>Profile data, "My fields" and "Call for help" numbers (on the phone)</td><td>Directly in the app: you can see all of them, change them or delete them at any time. "Delete profile" deletes a profile with all its data and attachments. "Delete all data", in the settings, deletes the database (including "My fields" and "Call for help" numbers), attachments, temporary files, scheduled reminders, the encryption keys kept by the phone and the settings. The "Call for help" shortcut on the icon is part of the app and remains, but with no numbers it only offers the emergency number. The Premium license, which is not health data, stays on the phone by default; if you tick the box the app removes it and frees the slot on the license server (internet required). Uninstalling the app also deletes everything. Backups and exported files saved elsewhere are not affected: you delete them yourself. We do not have these data, so we cannot show them to you or delete them.</td></tr>
+    <tr><td>Purchase and license data</td><td>Write to the address in section 1. Since we do not keep your email in clear on the license server, we may ask you for the license key to find your data. For the license you can also use "Deactivate on this phone".</td></tr>
     <tr><td>Objection (Art. 21)</td><td>Write to us about processing based on legitimate interest (section 9).</td></tr>
     <tr><td>Complaint</td><td>Italian Data Protection Authority, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), or the authority of the country where you live.</td></tr>
   </table>
@@ -326,7 +322,7 @@
 
   <h2>11. If you live outside the European Union</h2>
   <p>
-    SaluteInOrdine can be used worldwide. We are established in Italy: for the data we process (purchase, licence, updates) we apply the GDPR to all users, wherever they live (Art. 3(1) GDPR), and the rights in section 10 apply to you too.
+    SaluteInOrdine can be used worldwide. We are established in Italy: for the data we process (purchase, license, updates) we apply the GDPR to all users, wherever they live (Art. 3(1) GDPR), and the rights in section 10 apply to you too.
   </p>
   <p>
     Your country may have laws that give you additional rights, including on health data (for example, in the United States, some state laws on consumer health data). This policy is written on the basis of European Union and Italian law: <strong>we have not verified compliance with the laws of every country</strong>. Remember that your health data stay only on your phone and we do not receive them. For any request, write to us (section 1).
@@ -339,7 +335,7 @@
     <li><strong>Encrypted backup</strong>: AES-256-GCM with a key derived from your password (section 3.10).</li>
     <li><strong>App lock</strong> with PIN or biometrics and <strong>screenshot protection</strong> on by default (section 3.12).</li>
     <li><strong>No automatic backup</strong> of data to Google and no automatic phone-to-phone transfer (section 3.10).</li>
-    <li>Communication with the licence server and for updates uses HTTPS.</li>
+    <li>Communication with the license server and for updates uses HTTPS.</li>
   </ul>
   <p>
     No measure is infallible: anyone who knows the PIN or unlocks the phone can see the data in the app, and anyone holding the phone can use "Call for help". We recommend keeping the screen lock on, updating the operating system and <strong>making regular backups</strong>: if you lose or reset the phone without a backup, the data cannot be recovered.
